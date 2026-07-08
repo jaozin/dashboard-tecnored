@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Tecnored - Estrutura de Gestão Integrada</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .sidebar-color { background-color: #014E4E; }
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: #f1f1f1; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #014E4E; border-radius: 10px; }
+    </style>
+
+    <script>
+        const dashboardData = {{ data | tojson if data else '{}' }};
+
+        // Nível 1: Abas Primárias (Menu Lateral)
+        function switchNivel1(idContainer, btn) {
+
+            localStorage.setItem(
+               'aba_principal',
+                idContainer
+            );
+            document.querySelectorAll('.n1-container').forEach(el => el.classList.add('hidden'));
+            document.getElementById(idContainer).classList.remove('hidden');
+            
+            document.querySelectorAll('.btn-n1').forEach(b => b.classList.remove('bg-white/20', 'font-bold'));
+            btn.classList.add('bg-white/20', 'font-bold');
+        }
+
+        // Nível 2: Abas Secundárias (Sub-menus Superiores)
+        function switchNivel2(idContainer, containerClass, btn) {
+            document.querySelectorAll('.' + containerClass).forEach(el => el.classList.add('hidden'));
+            document.getElementById(idContainer).classList.remove('hidden');
+            
+            const pai = btn.parentElement;
+            pai.querySelectorAll('.btn-n2').forEach(b => b.classList.remove('bg-[#014E4E]', 'text-white'));
+            pai.querySelectorAll('.btn-n2').forEach(b => b.classList.add('bg-white', 'text-gray-700', 'border'));
+            
+            btn.classList.remove('bg-white', 'text-gray-700', 'border');
+            btn.classList.add('bg-[#014E4E]', 'text-white');
+        }
+
+        // Nível 3: Abas Terciárias (Sub-menus de Detalhamento Interno)
+        function switchNivel3(idContainer, containerClass, btn) {
+            document.querySelectorAll('.' + containerClass).forEach(el => el.classList.add('hidden'));
+            document.getElementById(idContainer).classList.remove('hidden');
+            
+            const pai = btn.parentElement;
+            pai.querySelectorAll('.btn-n3').forEach(b => b.classList.remove('border-[#014E4E]', 'text-[#014E4E]', 'font-bold'));
+            pai.querySelectorAll('.btn-n3').forEach(b => b.classList.add('border-transparent', 'text-gray-500'));
+            
+            btn.classList.remove('border-transparent', 'text-gray-500');
+            btn.classList.add('border-[#014E4E]', 'text-[#014E4E]', 'font-bold');
+        }
+    </script>
+</head>
+<body class="bg-gray-100 text-gray-800 overflow-hidden h-screen flex">
+
+    <aside class="w-80 sidebar-color text-white flex flex-col justify-between shadow-2xl z-50">
+        <div class="flex flex-col h-full overflow-y-auto custom-scrollbar">
+            <div class="p-6 bg-white/10 flex justify-center border-b border-white/5 sticky top-0 bg-[#014E4E] z-10">
+                <img src="/static/images/Logo Tecnored.png" alt="Tecnored" class="w-full h-auto max-h-16 object-contain">
+            </div>
+            
+            <nav class="mt-4 px-3 space-y-1 flex-1">
+                <button onclick="switchNivel1('n1-dash-tecnored', this)" class="btn-n1 w-full flex items-center px-4 py-2.5 rounded-lg bg-white/20 font-bold text-sm transition text-left">
+                    <i class="fa-solid fa-gauge-high mr-3 text-teal-300 w-5"></i> Dash Tecnored
+                </button>
+                <button onclick="switchNivel1('n1-big-numbers', this)" class="btn-n1 w-full flex items-center px-4 py-2.5 rounded-lg hover:bg-white/10 text-sm transition text-left">
+                    <i class="fa-solid fa-list-ol mr-3 text-teal-300 w-5"></i> Big Numbers
+                </button>
+                <button onclick="switchNivel1('n1-realizacoes', this)" class="btn-n1 w-full flex items-center px-4 py-2.5 rounded-lg hover:bg-white/10 text-sm transition text-left">
+                    <i class="fa-solid fa-award mr-3 text-teal-300 w-5"></i> Realizações da semana
+                </button>
+                <button onclick="switchNivel1('n1-cronograma', this)" class="btn-n1 w-full flex items-center px-4 py-2.5 rounded-lg hover:bg-white/10 text-sm transition text-left">
+                    <i class="fa-solid fa-calendar-alt mr-3 text-teal-300 w-5"></i> Cronograma
+                </button>
+                <button onclick="switchNivel1('n1-rac', this)" class="btn-n1 w-full flex items-center px-4 py-2.5 rounded-lg hover:bg-white/10 text-sm transition text-left">
+                    <i class="fa-solid fa-magnifying-glass-chart mr-3 text-teal-300 w-5"></i> Relatório de Análise Crítica - RAC
+                </button>
+                <button onclick="switchNivel1('n1-lookahead', this)" class="btn-n1 w-full flex items-center px-4 py-2.5 rounded-lg hover:bg-white/10 text-sm transition text-left">
+                    <i class="fa-solid fa-forward mr-3 text-teal-300 w-5"></i> Look Ahead - Próximo Sprint
+                </button>
+                <button onclick="switchNivel1('n1-histograma', this)" class="btn-n1 w-full flex items-center px-4 py-2.5 rounded-lg hover:bg-white/10 text-sm transition text-left">
+                    <i class="fa-solid fa-chart-bar mr-3 text-teal-300 w-5"></i> Histograma de recursos
+                </button>
+                <button onclick="switchNivel1('n1-mudancas', this)" class="btn-n1 w-full flex items-center px-4 py-2.5 rounded-lg hover:bg-white/10 text-sm transition text-left">
+                    <i class="fa-solid fa-code-compare mr-3 text-teal-300 w-5"></i> Mudanças
+                </button>
+                <button onclick="switchNivel1('n1-licoes', this)" class="btn-n1 w-full flex items-center px-4 py-2.5 rounded-lg hover:bg-white/10 text-sm transition text-left">
+                    <i class="fa-solid fa-book-open mr-3 text-teal-300 w-5"></i> Lições aprendidas
+                </button>
+                <button onclick="switchNivel1('n1-riscos', this)" class="btn-n1 w-full flex items-center px-4 py-2.5 rounded-lg hover:bg-white/10 text-sm transition text-left">
+                    <i class="fa-solid fa-shield-halved mr-3 text-teal-300 w-5"></i> Riscos
+                </button>
+                <button onclick="switchNivel1('n1-custos', this)" class="btn-n1 w-full flex items-center px-4 py-2.5 rounded-lg hover:bg-white/10 text-sm transition text-left">
+                    <i class="fa-solid fa-hand-holding-dollar mr-3 text-teal-300 w-5"></i> Custos
+                </button>
+                <button onclick="switchNivel1('n1-kpi', this)" class="btn-n1 w-full flex items-center px-4 py-2.5 rounded-lg hover:bg-white/10 text-sm transition text-left">
+                    <i class="fa-solid fa-chart-line mr-3 text-teal-300 w-5"></i> KPI
+                </button>
+            </nav>
+        </div>
+
+        <div class="p-4 bg-white/5 border-t border-white/10 flex flex-col items-center sticky bottom-0 bg-[#014E4E]">
+            <img src="/static/images/logo-color-nuevo--gris--para-fb-02.png" 
+                 alt="Bureau Veritas" 
+                 class="w-1/2 h-auto max-h-13 object-contain brightness-0 invert opacity-90" 
+                 style="mix-blend-mode: screen;">
+        </div>
+    </aside>
+
+    <div class="flex-1 flex flex-col overflow-y-auto">
+        <header class="bg-white border-b border-gray-200 px-10 py-5 flex justify-between items-center sticky top-0 z-40 shadow-sm">
+            <div>
+                <h1 class="text-xl font-bold text-gray-800">Tecnored</h1>
+                <p class="text-xs text-gray-500">Engenharia de Custos, Prazos e Controle de Escopo Integrado</p>
+            </div>
+             
+                <div class="bg-amber-50 border border-amber-200 rounded-lg px-4 py-2">
+
+                    <div class="text-xs font-bold text-amber-700">
+                        🚧 Versão Beta 1.0
+                    </div>
+
+                    <div class="text-[11px] text-amber-600">
+                        Roadmap de Evolução em Andamento
+                    </div>
+
+                </div>
+
+                <div>
+
+                <select
+                    class="border rounded px-3 py-2"
+                    onchange="window.location='/?projeto=' + this.value"
+                >
+
+                    {% for projeto in data.projetos %}
+
+                        <option
+                            value="{{ projeto }}"
+                            {% if projeto == projeto_selecionado %}selected{% endif %}
+                        >
+                            {{ projeto }}
+                        </option>
+
+                    {% endfor %}
+
+                </select>
+                </div>
+
+        </header>
+
+        <main class="p-10 flex-grow overflow-y-auto">
+
+            <div id="n1-dash-tecnored" class="n1-container block space-y-6">
+                <div class="flex space-x-2 border-b border-gray-200 pb-3">
+                    <button onclick="switchNivel2('n2-dash-integrada', 'n2-dash-tabs', this)" class="btn-n2 px-4 py-1.5 rounded-lg font-bold bg-[#014E4E] text-white text-xs transition">Análise integrada</button>
+                    <button onclick="switchNivel2('n2-dash-projeto', 'n2-dash-tabs', this)" class="btn-n2 px-4 py-1.5 rounded-lg font-semibold bg-white border text-gray-700 text-xs transition">Projeto</button>
+                </div>
+                
+                <div id="n2-dash-integrada" class="n2-dash-tabs block bg-white p-8 rounded-2xl border shadow-sm">
+                <h3 class="font-bold text-lg text-gray-800 mb-6">Funil Executivo do Projeto</h3><div class="flex flex-col items-center space-y-3"><div class="w-80 bg-slate-200 p-4 rounded-lg text-center">
+                <div class="text-sm text-gray-600">Documentos Planejados</div><div class="text-3xl font-bold text-slate-700">{{ data.kpis.total_documentos }}</div></div><div class="text-2xl text-gray-400">↓</div>
+                <div class="w-72 bg-teal-100 p-4 rounded-lg text-center"><div class="text-sm text-gray-600">Emitidos</div><div class="text-3xl font-bold text-teal-700">{{ data.funil.emitidos }}</div></div>
+                <div class="text-2xl text-gray-400">↓</div><div class="w-64 bg-blue-100 p-4 rounded-lg text-center"><div class="text-sm text-gray-600">Em Avaliação</div><div class="text-3xl font-bold text-blue-700">{{ data.funil.avaliacao }}
+                </div></div><div class="text-2xl text-gray-400">↓</div><div class="w-56 bg-orange-100 p-4 rounded-lg text-center"><div class="text-sm text-gray-600">Comentários Atendidos</div>
+                <div class="text-3xl font-bold text-orange-700">{{ data.funil.comentarios }}</div></div><div class="text-2xl text-gray-400">↓</div><div class="w-48 bg-green-100 p-4 rounded-lg text-center">
+                <div class="text-sm text-gray-600">Aprovados</div><div class="text-3xl font-bold text-green-700">{{ data.funil.aprovados }}</div></div></div>
+                </div>
+
+                <div id="n2-dash-projeto" class="n2-dash-tabs hidden bg-white p-8 rounded-2xl border shadow-sm">
+                    <h3 class="font-bold text-lg text-gray-800 mb-2">Painel de Controle do Projeto</h3>
+                    <p class="text-sm text-gray-500">Métricas analíticas do escopo BQM-LS.</p>
+                </div>
+            </div>
+
+            <div id="n1-big-numbers" class="n1-container hidden bg-white p-8 rounded-2xl border shadow-sm space-y-8">
+                <h3 class="font-bold text-lg text-gray-800 border-b pb-2">Métricas de Big Numbers (Resumo Executivo)</h3>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                    <div class="bg-gray-50 p-6 rounded-xl border">
+                        <div class="text-xs text-gray-400 font-bold uppercase tracking-wider">Número de Documentos</div>
+                        <div class="text-3xl font-bold text-[#014E4E] mt-1">{{ data.kpis.total_documentos if data else '0' }}</div>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl border">
+                        <div class="text-xs text-gray-400 font-bold uppercase tracking-wider">% Aderência do Modelo</div>
+                        <div class="text-3xl font-bold text-teal-600 mt-1">{{ data.kpis.aderencia if data else '0.0' }}%</div>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl border">
+                        <div class="text-xs text-gray-400 font-bold uppercase tracking-wider">Avanço Físico (EI)</div>
+                        <div class="text-3xl font-bold text-blue-600 mt-1">{{ data.kpis.avanco_ei_real if data else '0.0' }}%</div>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-xl border">
+                        <div class="text-xs text-gray-400 font-bold uppercase tracking-wider">Avanço Financeiro</div>
+                        <div class="text-3xl font-bold text-orange-600 mt-1">{{ data.kpis.avanco_financeiro if data else '0.0' }}%</div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl border shadow-inner">
+                    <h4 class="text-sm font-bold text-gray-500 mb-4 uppercase tracking-wider">Avanço por Disciplina — Emissões Iniciais (EI) vs  Aprovações (AP)</h4>
+                    <div class="relative h-96">
+                        <canvas id="chartEmpilhadoResumo"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div id="n1-realizacoes" class="n1-container hidden space-y-6">
+                <div class="flex space-x-2 border-b border-gray-200 pb-3">
+                    <button onclick="switchNivel2('n2-realizacoes-avancos', 'n2-realizacoes-tabs', this)" class="btn-n2 px-4 py-1.5 rounded-lg font-bold bg-[#014E4E] text-white text-xs transition">Avanços</button>
+                    <button onclick="switchNivel2('n2-realizacoes-pontos', 'n2-realizacoes-tabs', this)" class="btn-n2 px-4 py-1.5 rounded-lg font-semibold bg-white border text-gray-700 text-xs transition">Pontos de Atenção</button>
+                    <button onclick="switchNivel2('n2-realizacoes-pendencias', 'n2-realizacoes-tabs', this)" class="btn-n2 px-4 py-1.5 rounded-lg font-semibold bg-white border text-gray-700 text-xs transition">Pendências</button>
+                </div>
+
+                <div id="n2-realizacoes-avancos" class="n2-realizacoes-tabs block space-y-6">
+                    <div class="flex space-x-6 border-b border-gray-200 text-xs font-medium">
+                        <button onclick="switchNivel3('n3-avancos-geral', 'n3-avancos-tabs', this)" class="btn-n3 pb-2 border-b-2 border-[#014E4E] text-[#014E4E] font-bold">Geral</button>
+                        <button onclick="switchNivel3('n3-avancos-docs', 'n3-avancos-tabs', this)" class="btn-n3 pb-2 border-b-2 border-transparent text-gray-500">Documentos a Emitir</button>
+                        <button onclick="switchNivel3('n3-avancos-avaliacao', 'n3-avancos-tabs', this)" class="btn-n3 pb-2 border-b-2 border-transparent text-gray-500">Avaliação do cliente</button>
+                        <button onclick="switchNivel3('n3-avancos-comentario', 'n3-avancos-tabs', this)" class="btn-n3 pb-2 border-b-2 border-transparent text-gray-500">Atendimento de comentário</button>
+                        <button onclick="switchNivel3('n3-avancos-aprovacao', 'n3-avancos-tabs', this)" class="btn-n3 pb-2 border-b-2 border-transparent text-gray-500">Aprovação</button>
+                    </div>
+
+                    <div id="n3-avancos-geral" class="n3-avancos-tabs block bg-white p-6 rounded-xl border"><h4>Visão Consolidada de Avanços Semanais</h4></div>
+                    <div id="n3-avancos-docs"class="n3-avancos-tabs hidden bg-white p-6 rounded-xl border"><h4 class="font-bold text-gray-800 mb-4">Documentos Planejados para Emissão</h4>
+                    <div class="overflow-auto"><table class="w-full text-sm"><thead><tr class="border-b bg-gray-50"><th class="text-left p-2">Documento</th><th class="text-left p-2">Disciplina</th>
+                    <th class="text-left p-2">Etapa</th><th class="text-center p-2">Ação</th></tr></thead><tbody>{% for doc in data.documentos_emitir %}<tr class="border-b"><td class="p-2">{{ doc.documento }}</td> 
+                    <td class="p-2">{{ doc.disciplina }}</td><td class="p-2">{{ doc.tarefa }}</td><td class="p-2 text-center"><button onclick="this.innerHTML='✅ Emitido';this.disabled=true;const linha = this.closest('tr');
+                    linha.classList.add('bg-green-100','text-green-800');linha.style.textDecoration='line-through';linha.style.transition='all 0.4s ease';this.classList.remove('bg-green-600');this.classList.add(
+                    'bg-green-700');"class="bg-green-600 hover:bg-green-700 transition-all duration-300 text-white px-3 py-1 rounded-full text-xs shadow-sm hover:shadow-md">📤 Emitir</button>
+
+                    </td></tr>{% endfor %}</tbody></table></div></div>
+
+                    <div id="n3-avancos-avaliacao"class="n3-avancos-tabs hidden bg-white p-6 rounded-xl border"><h4 class="font-bold text-gray-800 mb-4">Documentos em Avaliação do Cliente</h4><table class="w-full text-sm">
+                    <thead><tr class="border-b bg-gray-50"><th class="text-left p-2">Documento</th><th class="text-left p-2">Disciplina</th><th class="text-left p-2">Etapa</th></tr></thead><tbody>{% for doc in data.avaliacao_cliente %}<tr class="border-b">
+                    <td class="p-2">{{ doc.documento }}</td><td class="p-2">{{ doc.disciplina }}</td><td class="p-2">{{ doc.tarefa }}</td></tr>{% endfor %}</tbody></table></div>
+
+                    <div id="n3-avancos-comentario"class="n3-avancos-tabs hidden bg-white p-6 rounded-xl border"><h4 class="font-bold text-gray-800 mb-4">Documentos em Atendimento de Comentários</h4><table class="w-full text-sm">
+                    <thead><tr class="border-b bg-gray-50"><th class="text-left p-2">Documento</th><th class="text-left p-2">Disciplina</th><th class="text-left p-2">Etapa</th><th class="text-center p-2">Ação</th></tr>
+                    </thead><tbody>{% for doc in data.atendimento_comentario %}<tr class="border-b"><td class="p-2">{{ doc.documento }}</td><td class="p-2">{{ doc.disciplina }}</td><td class="p-2">{{ doc.tarefa }}</td>
+                    <td class="p-2 text-center"><button onclick="this.innerHTML='✅ Atendido';this.disabled=true;const linha = this.closest('tr');linha.classList.add('bg-green-100','text-green-800');linha.style.textDecoration='line-through';
+                    linha.style.transition='all 0.4s ease';this.classList.remove('bg-orange-500');this.classList.add('bg-green-700');"
+                    class="bg-orange-500 hover:bg-orange-600 transition-all duration-300 text-white px-3 py-1 rounded-full text-xs shadow-sm hover:shadow-md">💬 Atender</button>
+
+                    </td></tr>{% endfor %}</tbody></table></div>
+
+                    <div id="n3-avancos-aprovacao"class="n3-avancos-tabs hidden bg-white p-6 rounded-xl border"><h4 class="font-bold text-gray-800 mb-4">Documentos Aprovados</h4><table class="w-full text-sm"><thead>
+                    <tr class="border-b bg-gray-50"><th class="text-left p-2">Documento</th><th class="text-left p-2">Disciplina</th><th class="text-left p-2">Etapa</th></tr></thead><tbody>{% for doc in data.aprovacao %}
+                    <tr class="border-b"><td class="p-2">{{ doc.documento }}</td><td class="p-2">{{ doc.disciplina }}</td><td class="p-2">{{ doc.tarefa }}</td></tr>{% endfor %}</tbody></table></div>
+                </div>
+                <div id="n2-realizacoes-pontos" class="n2-realizacoes-tabs hidden bg-white p-6 rounded-xl border"><h4>Pontos de Atenção Estratégicos</h4></div>
+                <div id="n2-realizacoes-pendencias" class="n2-realizacoes-tabs hidden bg-white p-6 rounded-xl border"><h4>Lista de Pendências de Engenharia</h4></div>
+            </div>
+
+            <div id="n1-cronograma" class="n1-container hidden space-y-6">
+                <div class="flex space-x-2 border-b border-gray-200 pb-3">
+                    <button onclick="switchNivel2('n2-crono-curva', 'n2-crono-tabs', this)" class="btn-n2 px-4 py-1.5 rounded-lg font-bold bg-[#014E4E] text-white text-xs transition">Curva S</button>
+                </div>
+
+                <div id="n2-crono-curva" class="n2-crono-tabs block space-y-6">
+                    <div class="flex space-x-6 border-b border-gray-200 text-xs font-medium">
+                        <button onclick="switchNivel3('n3-curva-fisico', 'n3-curva-tabs', this)" class="btn-n3 pb-2 border-b-2 border-[#014E4E] text-[#014E4E] font-bold">Avanço Físico</button>
+                        <button onclick="switchNivel3('n3-curva-financeiro', 'n3-curva-tabs', this)" class="btn-n3 pb-2 border-b-2 border-transparent text-gray-500">Avanço Financeiro</button>
+                        <button onclick="switchNivel3('n3-curva-resumo', 'n3-curva-tabs', this)"class="btn-n3 pb-2 border-b-2 border-transparent text-gray-500">Resumo por Disciplina</button>
+                    </div>
+
+                    <div id="n3-curva-fisico" class="n3-curva-tabs block bg-white p-6 rounded-xl border">
+                        <h4 class="font-bold text-gray-800 mb-4">Evolução de Avanço Físico</h4>
+                        <div class="relative h-64"><canvas id="chartCurvaSFisica"></canvas></div>
+                    </div>                    
+                    <div id="n3-curva-financeiro" class="n3-curva-tabs hidden bg-white p-6 rounded-xl border">
+                        <h4 class="font-bold text-gray-800 mb-4">Evolução de Avanço Financeiro Ponderado</h4>
+                    </div>
+
+                    <div id="n3-curva-resumo"class="n3-curva-tabs hidden bg-white p-6 rounded-xl border"><h4 class="font-bold text-gray-800 mb-4">Resumo por Disciplina</h4><div class="overflow-auto"><table class="w-full text-sm">
+                    <thead><tr class="border-b bg-gray-50"><th class="p-2 text-left">Disciplina</th><th class="p-2 text-center">EI Total</th><th class="p-2 text-center">EI Concluída</th><th class="p-2 text-center">%EI</th>
+                    <th class="p-2 text-center">Avaliação</th><th class="p-2 text-center">Comentário</th><th class="p-2 text-center">Aprovação</th><th class="p-2 text-center">%AP</th></tr></thead><tbody>{% for item in data.resumo_disciplinas %}
+                    <tr class="border-b"><td class="p-2">{{ item.disciplina }}</td><td class="p-2 text-center">{{ item.ei_total }}</td><td class="p-2 text-center">{{ item.ei_concluida }}</td><td class="p-2 text-center">{{ (item.percentual_ei * 100)|round(1) }}%</td>
+                    <td class="p-2 text-center">{{ item.avaliacao_cliente }}</td><td class="p-2 text-center">{{ item.atendimento_comentario }}</td><td class="p-2 text-center">{{ item.aprovacao_concluida }}</td><td class="p-2 text-center">{{ (item.percentual_ap * 100)|round(1) }}%</td>
+                    </tr>{% endfor %}</tbody></table></div></div>
+                </div>
+            </div>               
+            <div id="n1-rac" class="n1-container hidden space-y-6">
+                <div class="flex space-x-2 border-b border-gray-200 pb-3">
+                    <button onclick="switchNivel2('n2-rac-s', 'n2-rac-tabs', this)" class="btn-n2 px-4 py-1.5 rounded-lg font-bold bg-[#014E4E] text-white text-xs transition">RAC-S</button>
+                    <button onclick="switchNivel2('n2-rac-r', 'n2-rac-tabs', this)" class="btn-n2 px-4 py-1.5 rounded-lg font-semibold bg-white border text-gray-700 text-xs transition">RAC-R</button>
+                    <button onclick="switchNivel2('n2-rac-c', 'n2-rac-tabs', this)" class="btn-n2 px-4 py-1.5 rounded-lg font-semibold bg-white border text-gray-700 text-xs transition">RAC-C</button>
+                </div>
+                
+                <div id="n2-rac-s" class="n2-rac-tabs block bg-white p-6 rounded-xl border"><h4>Análise Crítica: RAC-S</h4></div>
+                <div id="n2-rac-r" class="n2-rac-tabs hidden bg-white p-6 rounded-xl border"><h4>Análise Crítica: RAC-R</h4></div>
+                <div id="n2-rac-c" class="n2-rac-tabs hidden bg-white p-6 rounded-xl border"><h4>Análise Crítica: RAC-C</h4></div>
+            </div>
+
+            <div id="n1-lookahead" class="n1-container hidden space-y-6">
+                <div id="n2-lookahead-avancos" class="block space-y-6">
+                    <div class="flex space-x-6 border-b border-gray-200 text-xs font-medium">
+                        <button onclick="switchNivel3('n3-lookahead-geral', 'n3-lookahead-tabs', this)" class="btn-n3 pb-2 border-b-2 border-[#014E4E] text-[#014E4E] font-bold">Geral</button>
+                        <button onclick="switchNivel3('n3-lookahead-docs', 'n3-lookahead-tabs', this)" class="btn-n3 pb-2 border-b-2 border-transparent text-gray-500">Documentos a Emitir</button>
+                        <button onclick="switchNivel3('n3-lookahead-avaliacao', 'n3-lookahead-tabs', this)" class="btn-n3 pb-2 border-b-2 border-transparent text-gray-500">Avaliação do cliente</button>
+                        <button onclick="switchNivel3('n3-lookahead-comentario', 'n3-lookahead-tabs', this)" class="btn-n3 pb-2 border-b-2 border-transparent text-gray-500">Atendimento de comentário</button>
+                        <button onclick="switchNivel3('n3-lookahead-aprovacao', 'n3-lookahead-tabs', this)" class="btn-n3 pb-2 border-b-2 border-transparent text-gray-500">Aprovação</button>
+                    </div>
+
+                    <div id="n3-lookahead-geral" class="n3-lookahead-tabs block bg-white p-6 rounded-xl border"><h4>Look Ahead Geral - Próximo Horizonte</h4></div>
+                    <div id="n3-lookahead-docs" class="n3-lookahead-tabs hidden bg-white p-6 rounded-xl border"><h4 class="font-bold text-gray-800 mb-4">Documentos Planejados para Emissão - Próximo Sprint</h4><div class="overflow-auto">
+                    <table class="w-full text-sm"><thead><tr class="border-b bg-gray-50"><th class="text-left p-2">Documento</th><th class="text-left p-2">Disciplina</th><th class="text-left p-2">Etapa</th>
+                    <th class="text-center p-2">Ação</th>                           
+                
+                   </tr></thead><tbody>{% for doc in data.prox_emitir %}<tr class="border-b"><td class="p-2">{{ doc.documento }}</td><td class="p-2">{{ doc.disciplina }}</td><td class="p-2">{{ doc.tarefa }}</td><td class="p-2 text-center"><button
+                   onclick="this.innerHTML='✅ Emitido';this.disabled=true;const linha = this.closest('tr');linha.classList.add('bg-green-100','text-green-800');linha.style.textDecoration='line-through';linha.style.transition='all 0.4s ease';this.classList.remove('bg-green-600');
+                   this.classList.add('bg-green-700');"class="bg-green-600 hover:bg-green-700 transition-all duration-300 text-white px-3 py-1 rounded-full text-xs shadow-sm hover:shadow-md">
+                  📤 Emitir</button></td></tr>{% endfor %}</tbody></table></div></div>
+
+
+                    <div id="n3-lookahead-avaliacao" class="n3-lookahead-tabs hidden bg-white p-6 rounded-xl border"><h4 class="font-bold text-gray-800 mb-4">Avaliações Planejadas - Próximo Sprint</h4><table class="w-full text-sm">
+                    <thead><tr class="border-b bg-gray-50"><th class="text-left p-2">Documento</th><th class="text-left p-2">Disciplina</th><th class="text-left p-2">Etapa</th></tr></thead><tbody>{% for doc in data.prox_avaliacao %}
+                    <tr class="border-b"><td class="p-2">{{ doc.documento }}</td><td class="p-2">{{ doc.disciplina }}</td><td class="p-2">{{ doc.tarefa }}</td></tr>{% endfor %}</tbody></table></div>
+
+                    <div id="n3-lookahead-comentario"class="n3-lookahead-tabs hidden bg-white p-6 rounded-xl border"><h4 class="font-bold text-gray-800 mb-4">Atendimento de Comentários - Próximo Sprint</h4>
+                    <table class="w-full text-sm"><thead><tr class="border-b bg-gray-50"><th class="text-left p-2">Documento</th><th class="text-left p-2">Disciplina</th><th class="text-left p-2">Etapa</th><th class="text-center p-2">Ação</th></tr></thead>
+                    <tbody>{% for doc in data.prox_comentario %}<tr class="border-b"><td class="p-2">{{ doc.documento }}</td><td class="p-2">{{ doc.disciplina }}</td><td class="p-2">{{ doc.tarefa }}</td><td class="p-2 text-center">
+                    <button onclick="this.innerHTML='✅ Atendido';this.disabled=true;const linha = this.closest('tr');linha.classList.add('bg-green-100','text-green-800');linha.style.textDecoration='line-through';
+                    linha.style.transition='all 0.4s ease';this.classList.remove('bg-orange-500');this.classList.add('bg-green-700');"
+                    class="bg-orange-500 hover:bg-orange-600 transition-all duration-300 text-white px-3 py-1 rounded-full text-xs shadow-sm hover:shadow-md">💬 Atender</button></td></tr>{% endfor %}</tbody>  
+                    </table></div>
+
+                    <div id="n3-lookahead-aprovacao"class="n3-lookahead-tabs hidden bg-white p-6 rounded-xl border"><h4 class="font-bold text-gray-800 mb-4">Aprovações Planejadas - Próximo Sprint</h4><table class="w-full text-sm">
+                    <thead><tr class="border-b bg-gray-50"><th class="text-left p-2">Documento</th><th class="text-left p-2">Disciplina</th><th class="text-left p-2">Etapa</th></tr></thead><tbody>{% for doc in data.prox_aprovacao %}
+                    <tr class="border-b"><td class="p-2">{{ doc.documento }}</td><td class="p-2">{{ doc.disciplina }}</td><td class="p-2">{{ doc.tarefa }}</td></tr>{% endfor %}</tbody></table></div>
+                </div>
+            </div>
+
+            <div id="n1-histograma" class="n1-container hidden space-y-6">
+                <div class="flex space-x-2 border-b border-gray-200 pb-3">
+                    <button onclick="switchNivel2('n2-hist-alocacao', 'n2-hist-tabs', this)" class="btn-n2 px-4 py-1.5 rounded-lg font-bold bg-[#014E4E] text-white text-xs transition">Alocação de recursos</button>
+                </div>
+                <div id="n2-hist-alocacao" class="n2-hist-tabs block bg-white p-6 rounded-xl border">
+                    <h4 class="font-bold text-gray-800">Histograma de Alocação de Recursos</h4>
+                </div>
+            </div>
+
+            <div id="n1-mudancas" class="n1-container hidden bg-white p-6 rounded-xl border"><h3>Gestão de Mudanças</h3></div>
+            <div id="n1-licoes" class="n1-container hidden bg-white p-6 rounded-xl border"><h3>Banco de Lições Aprendidas</h3></div>
+            <div id="n1-riscos" class="n1-container hidden bg-white p-6 rounded-xl border"><h3>Matriz de Riscos Operacionais</h3></div>
+            <div id="n1-custos" class="n1-container hidden bg-white p-6 rounded-xl border"><h3>Controle de Custos e Desembolsos</h3></div>
+            <div id="n1-kpi" class="n1-container hidden bg-white p-6 rounded-xl border"><h3>Indicadores Chave de Performance (KPI)</h3></div>
+
+        </main>
+    </div>
+
+    <script>
+                window.addEventListener(
+                    'DOMContentLoaded',
+                    () => {
+
+                        const abaSalva =
+                            localStorage.getItem(
+                                'aba_principal'
+                            );
+
+                        if (abaSalva) {
+
+                            document.querySelectorAll('.n1-container')
+                                .forEach(el => el.classList.add('hidden'));
+
+                            const container =
+                                document.getElementById(abaSalva);
+
+                            if (container) {
+
+                                container.classList.remove('hidden');
+
+                                document.querySelectorAll('.btn-n1')
+                                    .forEach(b =>
+                                        b.classList.remove(
+                                            'bg-white/20',
+                                            'font-bold'
+                                        )
+                                    );
+
+                                document.querySelectorAll('.btn-n1')
+                                    .forEach(btn => {
+
+                                        const onclickText =
+                                            btn.getAttribute('onclick');
+
+                                        if (
+                                            onclickText &&
+                                            onclickText.includes(abaSalva)
+                                        ) {
+
+                                            btn.classList.add(
+                                                'bg-white/20',
+                                                'font-bold'
+                                            );
+
+                                        }
+                                    });}}});
+
+        document.addEventListener("DOMContentLoaded", function() {
+            // 1. Curva S Física
+            new Chart(document.getElementById('chartCurvaSFisica'), {
+                type: 'line',
+                data: {
+                    labels: dashboardData.curva_s ? dashboardData.curva_s.datas : [],
+                    datasets: [
+                        { label: 'Real Acumulado', data: dashboardData.curva_s ? dashboardData.curva_s.real : [], borderColor: '#014E4E', tension: 0.2, fill: false },
+                        { label: 'Previsto Acumulado', data: dashboardData.curva_s ? dashboardData.curva_s.previsto : [], borderColor: '#cbd5e1', borderDash: [5,5], tension: 0.2, fill: false }
+                    ]
+                },
+                options: { responsive: true, maintainAspectRatio: false }
+            });
+
+            // 2. Gráfico Big Numbers - Colunas com Fundo Amarelo Lado a Lado
+            const ctxBN = document.getElementById('chartEmpilhadoResumo');
+            if (ctxBN) {
+                new Chart(ctxBN, {
+                    type: 'bar',
+                    data: {
+                        labels: dashboardData.grafico_empilhado_resumo ? dashboardData.grafico_empilhado_resumo.labels : [],
+                        datasets: [
+                            {
+                                label: 'Emissão Prevista',
+                                data: dashboardData.grafico_empilhado_resumo
+                                    ? dashboardData.grafico_empilhado_resumo.emissao_prevista
+                                    : [],
+                                backgroundColor: 'rgba(148,163,184,0.25)',
+                                stack: 'EI'
+                            },
+                            {
+                                label: 'Emissão Real',
+                                data: dashboardData.grafico_empilhado_resumo
+                                    ? dashboardData.grafico_empilhado_resumo.emissao_real
+                                    : [],
+                                backgroundColor: '#014E4E',
+                                stack: 'EI'
+                            },
+                            {
+                                label: 'Aprovação Prevista',
+                                data: dashboardData.grafico_empilhado_resumo
+                                    ? dashboardData.grafico_empilhado_resumo.aprovacao_prevista
+                                    : [],
+                                backgroundColor: 'rgba(203,213,225,0.25)',
+                                stack: 'AP'
+                            },
+                            {
+                                label: 'Aprovação Real',
+                                data: dashboardData.grafico_empilhado_resumo
+                                    ? dashboardData.grafico_empilhado_resumo.aprovacao_real
+                                    : [],
+                                backgroundColor: '#f97316',
+                                stack: 'AP'
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            x: { stacked: false },
+                            y: { stacked: false, beginAtZero: true }
+                        },
+                        plugins: {
+                            legend: { position: 'bottom', labels: { boxWidth: 15, font: { family: 'Poppins', size: 11 } } }
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

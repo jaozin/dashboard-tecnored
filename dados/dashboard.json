@@ -1,0 +1,5942 @@
+[
+    {
+        "projeto": "F0009_000",
+        "documento": "CP-F0009-0000-MB-E-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_000",
+        "documento": "CP-F0009-0000-MB-E-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_000",
+        "documento": "CP-F0009-0000-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_000",
+        "documento": "CP-F0009-0000-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_000",
+        "documento": "CP-F0009-0000-MB-M-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_000",
+        "documento": "CP-F0009-0000-MB-M-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_000",
+        "documento": "CP-F0009-0000-MB-M-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_000",
+        "documento": "CP-F0009-0000-MB-P-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "PROCESSO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_000",
+        "documento": "CP-F0009-0000-MB-P-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "PROCESSO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_000",
+        "documento": "CP-F0009-0000-MB-P-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "PROCESSO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_000",
+        "documento": "CP-F0009-0000-MB-P-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "PROCESSO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_000",
+        "documento": "CP-F0009-0000-MB-S-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_000",
+        "documento": "CP-F0009-0000-MB-S-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_000",
+        "documento": "CP-F0009-0000-MB-S-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_000",
+        "documento": "CP-F0009-0000-MB-S-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_000",
+        "documento": "CR-F0009-0000-MB-F-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "PLANEJAMENTO ",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_000",
+        "documento": "CR-F0009-0000-MB-F-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "PLANEJAMENTO ",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_000",
+        "documento": "FG-F0009-0000-MB-P-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "PROCESSO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_000",
+        "documento": "FG-F0009-0000-MB-P-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "PROCESSO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_000",
+        "documento": "FG-F0009-0000-MB-P-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "PROCESSO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_000",
+        "documento": "FG-F0009-0000-MB-P-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "PROCESSO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_000",
+        "documento": "LF-F0009-0000-MB-F-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "COORDENAÇÃO ",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_000",
+        "documento": "LF-F0009-0000-MB-F-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "COORDENAÇÃO ",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_000",
+        "documento": "LF-F0009-0000-MB-F-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "COORDENAÇÃO ",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-E-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-E-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-E-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-E-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-E-00002",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-E-00002",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-E-00002",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-E-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-J-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-J-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-J-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-J-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-J-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-J-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-J-00004",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-J-00004",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-J-00004",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-L-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-L-00002",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-L-00003",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-L-00004",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-L-00005",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-L-00006",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-L-00007",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-L-00008",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-L-00009",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00002",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00002",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00002",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00003",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00003",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00003",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00004",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00004",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00004",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00005",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00005",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00005",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00006",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00006",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00006",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00007",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00007",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00007",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00008",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00008",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00008",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00009",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00009",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00009",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00010",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00010",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "AG-F0009-0305-MB-T-00010",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "DI-F0009-0305-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "DI-F0009-0305-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "DI-F0009-0305-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "DI-F0009-0305-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "DT-F0009-0305-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "DT-F0009-0305-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "DT-F0009-0305-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "DT-F0009-0305-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "ET-F0009-0305-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "ET-F0009-0305-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "ET-F0009-0305-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "ET-F0009-0305-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00004",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00004",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00004",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00005",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00005",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00005",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00006",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00006",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00006",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00007",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00007",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00007",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00008",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00008",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00008",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00009",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00009",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00009",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00010",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00010",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00010",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00011",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00011",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00011",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00012",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00012",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00012",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00013",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00013",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00013",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00014",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00014",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00014",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00015",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00015",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00015",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00016",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00016",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00016",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00017",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00017",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00017",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00018",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00018",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00018",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00019",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00019",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00019",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00020",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00020",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00020",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00021",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00021",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00021",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00022",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00022",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00022",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00023",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00023",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00023",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00024",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00024",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00024",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00025",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00025",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-J-00025",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-M-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-M-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-M-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-M-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-M-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-M-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-M-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-M-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-M-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FD-F0009-0305-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FG-F0009-0305-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FG-F0009-0305-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FG-F0009-0305-MB-J-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FG-F0009-0305-MB-J-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FG-F0009-0305-MB-J-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FG-F0009-0305-MB-J-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FG-F0009-0305-MB-P-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "PROCESSOS",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FG-F0009-0305-MB-P-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "PROCESSOS",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FG-F0009-0305-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "FG-F0009-0305-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "LB-F0009-0305-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "LB-F0009-0305-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "LB-F0009-0305-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "LB-F0009-0305-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "LE-F0009-0305-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "LE-F0009-0305-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "LE-F0009-0305-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "LE-F0009-0305-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "LI-F0009-0305-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "LI-F0009-0305-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "LI-F0009-0305-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "LI-F0009-0305-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "LK-F0009-0305-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "LK-F0009-0305-MB-T-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "LK-F0009-0305-MB-T-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "LK-F0009-0305-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "LL-F0009-0305-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "LL-F0009-0305-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "LL-F0009-0305-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "LL-F0009-0305-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "LM-F0009-0305-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "LM-F0009-0305-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "LM-F0009-0305-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "LM-F0009-0305-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "LP-F0009-0305-MB-G-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "COORDENAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "LP-F0009-0305-MB-G-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "COORDENAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "LR-F0009-0305-MB-E-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "LR-F0009-0305-MB-E-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "MC-F0009-0305-MB-C-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "CIVIL",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "MC-F0009-0305-MB-C-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "CIVIL",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "MC-F0009-0305-MB-E-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "MC-F0009-0305-MB-E-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "MC-F0009-0305-MB-E-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "MC-F0009-0305-MB-E-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "MC-F0009-0305-MB-M-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "MC-F0009-0305-MB-M-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "MC-F0009-0305-MB-M-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "MC-F0009-0305-MB-M-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "MC-F0009-0305-MB-M-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "MC-F0009-0305-MB-M-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "MC-F0009-0305-MB-M-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "MC-F0009-0305-MB-M-00004",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "MC-F0009-0305-MB-M-00004",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "MC-F0009-0305-MB-M-00004",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "MC-F0009-0305-MB-S-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "MC-F0009-0305-MB-S-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "MC-F0009-0305-MB-S-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "MC-F0009-0305-MB-S-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Sim",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "ML-F0009-0305-MB-M-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "ML-F0009-0305-MB-M-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "ML-F0009-0305-MB-S-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Sim",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "ML-F0009-0305-MB-S-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Sim",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "ML-F0009-0305-MB-S-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Sim",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "ML-F0009-0305-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "ML-F0009-0305-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "ML-F0009-0305-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "ML-F0009-0305-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PL-F0009-0305-MB-M-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PL-F0009-0305-MB-M-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PL-F0009-0305-MB-M-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PL-F0009-0305-MB-M-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PL-F0009-0305-MB-M-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PL-F0009-0305-MB-M-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PL-F0009-0305-MB-M-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PL-F0009-0305-MB-M-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PL-F0009-0305-MB-M-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PL-F0009-0305-MB-M-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PL-F0009-0305-MB-M-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PL-F0009-0305-MB-M-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PL-F0009-0305-MB-M-00004",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PL-F0009-0305-MB-M-00004",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PL-F0009-0305-MB-M-00004",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PL-F0009-0305-MB-M-00004",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PL-F0009-0305-MB-M-00005",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PL-F0009-0305-MB-M-00005",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PL-F0009-0305-MB-M-00005",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PL-F0009-0305-MB-M-00005",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PL-F0009-0305-MB-M-00006",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PL-F0009-0305-MB-M-00006",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PL-F0009-0305-MB-M-00006",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PL-F0009-0305-MB-M-00006",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PL-F0009-0305-MB-S-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PL-F0009-0305-MB-S-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PL-F0009-0305-MB-S-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PL-F0009-0305-MB-S-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PQ-F0009-0305-MB-C-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "CIVIL",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PQ-F0009-0305-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PQ-F0009-0305-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PQ-F0009-0305-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PQ-F0009-0305-MB-M-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PQ-F0009-0305-MB-M-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PQ-F0009-0305-MB-M-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PQ-F0009-0305-MB-M-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PQ-F0009-0305-MB-S-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PQ-F0009-0305-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PQ-F0009-0305-MB-T-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PQ-F0009-0305-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "PQ-F0009-0305-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "RE-F0009-0305-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "RE-F0009-0305-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "RE-F0009-0305-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "RE-F0009-0305-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "RL-F0009-0305-MB-E-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "RL-F0009-0305-MB-E-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "RL-F0009-0305-MB-G-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "COORDENAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "RL-F0009-0305-MB-G-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "COORDENAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "RL-F0009-0305-MB-G-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "COORDENAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "RL-F0009-0305-MB-G-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "COORDENAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "RM-F0009-0305-MB-G-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "COORDENAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "RM-F0009-0305-MB-G-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "COORDENAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "RM-F0009-0305-MB-G-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "COORDENAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_305",
+        "documento": "RM-F0009-0305-MB-G-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "COORDENAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-E-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Sim",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-E-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-E-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-E-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Sim",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-E-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-E-00002",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-E-00002",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-E-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-E-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-E-00003",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-E-00003",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-E-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-J-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-J-00002",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-J-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-J-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-J-00003",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-J-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-L-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-L-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-L-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-L-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-L-00002",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-L-00002",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-L-00002",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-L-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-L-00003",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-L-00003",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-L-00003",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-L-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-L-00004",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-L-00004",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-L-00004",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-L-00004",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-S-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-S-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-S-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-S-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-S-00002",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-S-00002",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-S-00002",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-S-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-S-00003",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-S-00003",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-S-00003",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-S-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-S-00004",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-S-00004",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-S-00004",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-S-00004",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-T-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-T-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-T-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-T-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-T-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "AG-F0009-0306-MB-T-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "DI-F0009-0306-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "DI-F0009-0306-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "DI-F0009-0306-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "DI-F0009-0306-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Sim",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "DT-F0009-0306-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "DT-F0009-0306-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "DT-F0009-0306-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "DT-F0009-0306-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "DU-F0009-0306-MB-E-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "DU-F0009-0306-MB-E-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "DU-F0009-0306-MB-E-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "ET-F0009-0306-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "ET-F0009-0306-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "ET-F0009-0306-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-E-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-E-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-E-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00004",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00004",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00004",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00005",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00005",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00005",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00006",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00006",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00006",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00007",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00007",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00007",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00008",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00008",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00008",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00009",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00009",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00009",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00010",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00010",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00010",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00011",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00011",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00011",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00012",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00012",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00012",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00013",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00013",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00013",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00014",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00014",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00014",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00015",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00015",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00015",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00016",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00016",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00016",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00017",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00017",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00017",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00018",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00018",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00018",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00019",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00019",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00019",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00020",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00020",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00020",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00021",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00021",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00021",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00022",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00022",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00022",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00023",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00023",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-J-00023",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-M-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-M-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-M-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-M-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-M-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-M-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-M-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-M-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-M-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FD-F0009-0306-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FG-F0009-0306-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FG-F0009-0306-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FG-F0009-0306-MB-J-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FG-F0009-0306-MB-J-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FG-F0009-0306-MB-J-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FG-F0009-0306-MB-J-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FG-F0009-0306-MB-J-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FG-F0009-0306-MB-J-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FG-F0009-0306-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "FG-F0009-0306-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "LB-F0009-0306-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "LB-F0009-0306-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "LB-F0009-0306-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "LB-F0009-0306-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "LE-F0009-0306-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "LE-F0009-0306-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "LE-F0009-0306-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "LI-F0009-0306-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "LI-F0009-0306-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "LK-F0009-0306-MB-T-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "LK-F0009-0306-MB-T-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "LK-F0009-0306-MB-T-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "LK-F0009-0306-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "LL-F0009-0306-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "LL-F0009-0306-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "LL-F0009-0306-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "LM-F0009-0306-MB-E-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "LM-F0009-0306-MB-E-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "LM-F0009-0306-MB-E-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "LM-F0009-0306-MB-E-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Sim",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "LM-F0009-0306-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "LM-F0009-0306-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "LM-F0009-0306-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "LM-F0009-0306-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "LP-F0009-0306-MB-G-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "COORDENAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "LP-F0009-0306-MB-G-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "COORDENAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "LR-F0009-0306-MB-E-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "LR-F0009-0306-MB-E-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "MC-F0009-0306-MB-C-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "CIVIL",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "MC-F0009-0306-MB-C-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "CIVIL",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "MC-F0009-0306-MB-C-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "CIVIL",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "MC-F0009-0306-MB-C-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "CIVIL",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "MC-F0009-0306-MB-E-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "MC-F0009-0306-MB-E-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "MC-F0009-0306-MB-E-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "MC-F0009-0306-MB-E-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "MC-F0009-0306-MB-E-00002",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "MC-F0009-0306-MB-E-00002",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "MC-F0009-0306-MB-E-00002",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "MC-F0009-0306-MB-E-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "MC-F0009-0306-MB-M-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "MC-F0009-0306-MB-M-00002",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "MC-F0009-0306-MB-S-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "MC-F0009-0306-MB-S-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "MC-F0009-0306-MB-S-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "ML-F0009-0306-MB-E-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "ML-F0009-0306-MB-E-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "ML-F0009-0306-MB-E-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "ML-F0009-0306-MB-E-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "ML-F0009-0306-MB-S-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "ML-F0009-0306-MB-S-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "ML-F0009-0306-MB-S-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "ML-F0009-0306-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "ML-F0009-0306-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "ML-F0009-0306-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "PL-F0009-0306-MB-S-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "PL-F0009-0306-MB-S-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "PL-F0009-0306-MB-S-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "PQ-F0009-0306-MB-C-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "CIVIL",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "PQ-F0009-0306-MB-C-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "CIVIL",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "PQ-F0009-0306-MB-C-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "CIVIL",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "PQ-F0009-0306-MB-C-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "CIVIL",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "PQ-F0009-0306-MB-E-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Sim",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "PQ-F0009-0306-MB-E-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Sim",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "PQ-F0009-0306-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "análise tecnored",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "PQ-F0009-0306-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "PQ-F0009-0306-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "PQ-F0009-0306-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "PQ-F0009-0306-MB-M-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "PQ-F0009-0306-MB-M-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "PQ-F0009-0306-MB-S-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "PQ-F0009-0306-MB-S-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "PQ-F0009-0306-MB-S-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "ESTRUTURA METÁLICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "PQ-F0009-0306-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "PQ-F0009-0306-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "PQ-F0009-0306-MB-T-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "TUBULAÇÃO / UTILIDADES",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "RE-F0009-0306-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "RE-F0009-0306-MB-J-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "RL-F0009-0306-MB-E-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "RL-F0009-0306-MB-G-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "COORDENAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "RL-F0009-0306-MB-G-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "COORDENAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "RL-F0009-0306-MB-G-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "COORDENAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "RL-F0009-0306-MB-G-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "COORDENAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "RM-F0009-0306-MB-G-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "análise tecnored",
+        "disciplina": "COORDENAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "RM-F0009-0306-MB-G-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "COORDENAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "RM-F0009-0306-MB-G-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentários",
+        "disciplina": "COORDENAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_306",
+        "documento": "RM-F0009-0306-MB-G-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "COORDENAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_309",
+        "documento": "AG-F0009-0302-MB-L-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_309",
+        "documento": "BK-F0009-0300-MB-G-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "COORDENAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_309",
+        "documento": "CP-F0009-0309-MB-E-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "ELÉTRICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_309",
+        "documento": "CP-F0009-0309-MB-J-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_309",
+        "documento": "CP-F0009-0309-MB-J-00002",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "AUTOMAÇÃO E INSTRUMENTAÇÃO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_309",
+        "documento": "CP-F0009-0309-MB-M-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "MECÂNICA",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_309",
+        "documento": "CP-F0009-0309-MB-P-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "PROCESSO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_309",
+        "documento": "FG-F0009-0300-MB-P-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "PROCESSO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_309",
+        "documento": "FG-F0009-0300-MB-P-00002",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "PROCESSO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_309",
+        "documento": "FG-F0009-0302-MB-P-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "PROCESSO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_309",
+        "documento": "FG-F0009-0302-MB-P-00002",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "PROCESSO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_309",
+        "documento": "FG-F0009-0307-MB-P-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "PROCESSO",
+        "responsavel": "nan",
+        "critica": "Sim",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_309",
+        "documento": "FG-F0009-0307-MB-P-00002",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "PROCESSO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_309",
+        "documento": "FG-F0009-0309-MB-P-00001",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "PROCESSO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_309",
+        "documento": "FG-F0009-0309-MB-P-00002",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "PROCESSO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_309",
+        "documento": "FG-F0009-0309-MB-P-00003",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "PROCESSO",
+        "responsavel": "nan",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "F0009_309",
+        "documento": "FG-F0009-0309-MB-P-00004",
+        "sprint": "Próximo Sprint",
+        "tarefa": "emissão inicial",
+        "disciplina": "PROCESSO",
+        "responsavel": "nan",
+        "critica": "Sim",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "J0006",
+        "documento": "MD-J0006-0000-GE-M-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "MECHANICAL",
+        "responsavel": "Tecnored",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "J0006",
+        "documento": "MD-J0006-0000-GE-M-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentário",
+        "disciplina": "MECHANICAL",
+        "responsavel": "Eng. Mecânico",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "J0006",
+        "documento": "MD-J0006-0000-GE-M-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "avaliação do cliente",
+        "disciplina": "MECHANICAL",
+        "responsavel": "Tecnored",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "J0006",
+        "documento": "MD-J0006-0000-GE-P-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "PROCESS",
+        "responsavel": "Tecnored",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "J0006",
+        "documento": "MD-J0006-0000-GE-P-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentário",
+        "disciplina": "PROCESS",
+        "responsavel": "Eng. Processos",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "J0006",
+        "documento": "MD-J0006-0000-GE-P-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "avaliação do cliente",
+        "disciplina": "PROCESS",
+        "responsavel": "Tecnored",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "J0006",
+        "documento": "MD-J0006-0000-GE-P-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "PROCESS",
+        "responsavel": "Tecnored",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "J0006",
+        "documento": "RL-J0006-0000-GE-G-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "COORDINATION",
+        "responsavel": "Tecnored",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "J0006",
+        "documento": "RL-J0006-0000-GE-G-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentário",
+        "disciplina": "COORDINATION",
+        "responsavel": "Coordenador",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "J0006",
+        "documento": "RL-J0006-0000-GE-G-00001",
+        "sprint": "Sprint Atual",
+        "tarefa": "avaliação do cliente",
+        "disciplina": "COORDINATION",
+        "responsavel": "Tecnored",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "J0006",
+        "documento": "RL-J0006-0000-GE-M-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "aprovação",
+        "disciplina": "MECHANICAL",
+        "responsavel": "Tecnored",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "J0006",
+        "documento": "RL-J0006-0000-GE-M-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "atendimento de comentário",
+        "disciplina": "MECHANICAL",
+        "responsavel": "Eng. Mecânico",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "J0006",
+        "documento": "RL-J0006-0000-GE-M-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "avaliação do cliente",
+        "disciplina": "MECHANICAL",
+        "responsavel": "Tecnored",
+        "critica": "Não",
+        "emitido": "Não"
+    },
+    {
+        "projeto": "J0006",
+        "documento": "RL-J0006-0000-GE-M-00003",
+        "sprint": "Sprint Atual",
+        "tarefa": "emissão inicial",
+        "disciplina": "MECHANICAL",
+        "responsavel": "Eng. Mecânico",
+        "critica": "Não",
+        "emitido": "Não"
+    }
+]
