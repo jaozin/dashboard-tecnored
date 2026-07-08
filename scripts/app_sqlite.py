@@ -2,6 +2,7 @@ import os
 import sqlite3
 import pandas as pd
 from flask import Flask, render_template, request
+from datetime import datetime
 
 BASE_DIR = os.path.dirname(
     os.path.dirname(os.path.abspath(__file__))
@@ -302,6 +303,9 @@ def carregar_dados_dashboard(projeto):
 )
 
         dados = {
+             
+            "ultima_atualizacao": df_curva["data_comparativo"].max(),
+
             "projetos": projetos,
 
             "documentos_emitir": (
@@ -470,6 +474,37 @@ def index():
         <pre>{str(e)}</pre>
         """
 
+
+@app.route("/emitir", methods=["POST"])
+def emitir():
+
+    conn = sqlite3.connect(BANCO)
+    cursor = conn.cursor()
+
+    cursor.execute("""
+        INSERT INTO acoes_usuario
+        (
+            projeto,
+            documento,
+            etapa,
+            status,
+            data_acao
+        )
+        VALUES
+        (?, ?, ?, ?, datetime('now'))
+    """, (
+
+        request.form["projeto"],
+        request.form["documento"],
+        "Emissao",
+        "Emitido"
+
+    ))
+
+    conn.commit()
+    conn.close()
+
+    return {"sucesso": True}
 # ============================================================
 # EXECUÇÃO
 # ============================================================

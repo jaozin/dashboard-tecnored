@@ -71,7 +71,24 @@ CREATE TABLE IF NOT EXISTS tarefas (
     )
 )
 """)
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS acoes_usuario (
 
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+
+    projeto TEXT NOT NULL,
+
+    documento TEXT NOT NULL,
+
+    etapa TEXT NOT NULL,
+
+    status TEXT NOT NULL,
+
+    usuario TEXT,
+
+    data_acao TEXT NOT NULL
+)
+""")
 # ============================================================
 # TABELA HISTORICO
 # ============================================================
@@ -196,4 +213,5 @@ print("✅ Tabela historico OK")
 print("✅ Tabela kpis OK")
 print("✅ Tabela curva_s OK")
 print("✅ Tabela resumo_disciplinas OK")
+print("✅ Tabela acoes_usuario OK")
 print("✅ Banco pronto")

@@ -131,9 +131,11 @@
                         🚧 Versão Beta 1.0
                     </div>
 
+                    
                     <div class="text-[11px] text-amber-600">
-                        Roadmap de Evolução em Andamento
+                        Última atualização: {{ data.ultima_atualizacao }}
                     </div>
+
 
                 </div>
 
@@ -233,10 +235,8 @@
                     <div id="n3-avancos-docs"class="n3-avancos-tabs hidden bg-white p-6 rounded-xl border"><h4 class="font-bold text-gray-800 mb-4">Documentos Planejados para Emissão</h4>
                     <div class="overflow-auto"><table class="w-full text-sm"><thead><tr class="border-b bg-gray-50"><th class="text-left p-2">Documento</th><th class="text-left p-2">Disciplina</th>
                     <th class="text-left p-2">Etapa</th><th class="text-center p-2">Ação</th></tr></thead><tbody>{% for doc in data.documentos_emitir %}<tr class="border-b"><td class="p-2">{{ doc.documento }}</td> 
-                    <td class="p-2">{{ doc.disciplina }}</td><td class="p-2">{{ doc.tarefa }}</td><td class="p-2 text-center"><button onclick="this.innerHTML='✅ Emitido';this.disabled=true;const linha = this.closest('tr');
-                    linha.classList.add('bg-green-100','text-green-800');linha.style.textDecoration='line-through';linha.style.transition='all 0.4s ease';this.classList.remove('bg-green-600');this.classList.add(
-                    'bg-green-700');"class="bg-green-600 hover:bg-green-700 transition-all duration-300 text-white px-3 py-1 rounded-full text-xs shadow-sm hover:shadow-md">📤 Emitir</button>
-
+                    <td class="p-2">{{ doc.disciplina }}</td><td class="p-2">{{ doc.tarefa }}</td><td class="p-2 text-center"><button onclick="emitirDocumento('{{ projeto_selecionado }}','{{ doc.documento }}',this)"
+                    class="bg-green-600 hover:bg-green-700 transition-all duration-300 text-white px-3 py-1 rounded-full text-xs shadow-sm hover:shadow-md">📤 Emitir</button>
                     </td></tr>{% endfor %}</tbody></table></div></div>
 
                     <div id="n3-avancos-avaliacao"class="n3-avancos-tabs hidden bg-white p-6 rounded-xl border"><h4 class="font-bold text-gray-800 mb-4">Documentos em Avaliação do Cliente</h4><table class="w-full text-sm">

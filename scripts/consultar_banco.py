@@ -37,4 +37,36 @@ for tabela in tabelas:
 for coluna in cursor.fetchall():
     print(coluna)
 
+cursor.execute("""
+INSERT INTO acoes_usuario
+(
+    projeto,
+    documento,
+    etapa,
+    status,
+    data_acao
+)
+VALUES
+(
+    'F0009_306',
+    'TESTE_DOCUMENTO',
+    'Emissao',
+    'Emitido',
+    '08/07/2026 19:00'
+)
+""")
+
+conn.commit()
+
+
+print("\nACOES_USUARIO")
+
+cursor.execute("""
+SELECT *
+FROM acoes_usuario
+""")
+
+for linha in cursor.fetchall():
+    print(linha)
+
 conn.close()
