@@ -289,6 +289,20 @@ def carregar_dados_dashboard(projeto):
 
                 total_documentos = 0
                 aderencia = 0
+
+
+        df_curva["ei_real_acumulado"] = (
+                df_curva["ei_real_acumulado"]
+                .fillna(0)
+                .cummax()
+            )
+
+        df_curva["ei_previsto_acumulado"] = (
+                df_curva["ei_previsto_acumulado"]
+                .fillna(0)
+                .cummax()
+            )
+                
         dados = {
 
             "projetos": projetos,
@@ -466,6 +480,7 @@ def index():
 # ============================================================
 # EXECUÇÃO
 # ============================================================
+
 
 if __name__ == "__main__":
 
