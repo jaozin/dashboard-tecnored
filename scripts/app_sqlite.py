@@ -289,24 +289,20 @@ def carregar_dados_dashboard(projeto):
 
                 total_documentos = 0
                 aderencia = 0
+        print("DATA LIMITE:", df_curva["data_comparativo"].max())
 
+        print(
+                df_curva[
+                    [
+                        "data",
+                        "data_comparativo",
+                        "ei_real_acumulado"
+                    ]
+                ].tail(20)
+)
 
-        df_curva["ei_real_acumulado"] = (
-                df_curva["ei_real_acumulado"]
-                .fillna(0)
-                .cummax()
-            )
-
-        df_curva["ei_previsto_acumulado"] = (
-                df_curva["ei_previsto_acumulado"]
-                .fillna(0)
-                .cummax()
-            )
-                
         dados = {
-
             "projetos": projetos,
-
 
             "documentos_emitir": (
                 df_documentos_emitir
@@ -411,13 +407,10 @@ def carregar_dados_dashboard(projeto):
                         .tolist()
                     ),
 
-                    "real": (
-                        df_curva["ei_real_acumulado"]
-                        .fillna(0)
-                        .round(0)
-                        .astype(int)
-                        .tolist()
-                    )
+                    "real": [
+                    None if pd.isna(x) else int(round(x))
+                    for x in df_curva["ei_real_acumulado"]
+                    ],
             },  
                 "funil": {
 
