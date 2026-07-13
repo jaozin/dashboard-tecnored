@@ -1,8 +1,9 @@
 import os
 import sqlite3
 import pandas as pd
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, send_file
 from datetime import datetime
+from io import BytesIO
 
 BASE_DIR = os.path.dirname(
     os.path.dirname(os.path.abspath(__file__))
@@ -84,6 +85,29 @@ def carregar_dados_dashboard(projeto):
             params=[projeto]
             )
         
+        df_emitidos = pd.read_sql_query(
+                """
+                SELECT documento
+                FROM acoes_usuario
+                WHERE projeto = ?
+                AND etapa = 'Emissao'
+                AND status = 'Emitido'
+                """,
+                conn,
+                params=[projeto]
+            )
+        
+        df_comentarios_atendidos = pd.read_sql_query(
+            """
+            SELECT documento
+            FROM acoes_usuario
+            WHERE projeto = ?
+            AND etapa = 'Comentario'
+            AND status = 'Atendido'
+            """,
+            conn,
+            params=[projeto]
+            )
         df_avaliacao_cliente = pd.read_sql_query(
             """
             SELECT DISTINCT
@@ -290,24 +314,20 @@ def carregar_dados_dashboard(projeto):
 
                 total_documentos = 0
                 aderencia = 0
-        print("DATA LIMITE:", df_curva["data_comparativo"].max())
-
-        print(
-                df_curva[
-                    [
-                        "data",
-                        "data_comparativo",
-                        "ei_real_acumulado"
-                    ]
-                ].tail(20)
-)
-
         dados = {
              
             "ultima_atualizacao": df_curva["data_comparativo"].max(),
 
             "projetos": projetos,
 
+            "documentos_emitidos": (
+                df_emitidos["documento"]
+                .tolist()
+            ),
+            "comentarios_atendidos": (
+                df_comentarios_atendidos["documento"]
+                .tolist()
+            ),
             "documentos_emitir": (
                 df_documentos_emitir
                 .fillna("")
@@ -486,6 +506,39 @@ def emitir():
         (
             projeto,
             documento,
+            sprint,       
+            etapa,
+            status,
+            data_acao
+        )
+        VALUES
+        (?, ?, ?, ?, ?, datetime('now'))
+    """, (
+
+        request.form["projeto"],
+        request.form["documento"],
+        request.form["sprint"],
+        "Emissao",
+        "Emitido"
+
+    ))
+
+    conn.commit()
+    conn.close()
+
+    return {"sucesso": True}
+
+@app.route("/atender_comentario", methods=["POST"])
+def atender_comentario():
+    
+    conn = sqlite3.connect(BANCO)
+    cursor = conn.cursor()
+
+    cursor.execute("""
+        INSERT INTO acoes_usuario
+        (
+            projeto,
+            documento,
             etapa,
             status,
             data_acao
@@ -496,8 +549,8 @@ def emitir():
 
         request.form["projeto"],
         request.form["documento"],
-        "Emissao",
-        "Emitido"
+        "Comentario",
+        "Atendido"
 
     ))
 
@@ -505,6 +558,65 @@ def emitir():
     conn.close()
 
     return {"sucesso": True}
+
+
+@app.route("/exportar_atualizacoes")
+def exportar_atualizacoes():
+
+    projeto = request.args.get("projeto")
+
+    conn = sqlite3.connect(BANCO)
+
+    df = pd.read_sql_query(
+        """
+        SELECT
+            projeto,
+            documento,
+            sprint,
+            etapa,
+            status,
+            data_acao,
+            data_exportacao
+        FROM acoes_usuario
+        WHERE projeto = ?
+        """,
+        conn,
+        params=[projeto]
+    )
+
+    cursor = conn.cursor()
+
+    cursor.execute(
+        """
+        UPDATE acoes_usuario
+        SET data_exportacao = datetime('now')
+        WHERE projeto = ?
+        AND data_exportacao IS NULL
+        """,
+        (projeto,)
+    )
+
+    conn.commit()
+    conn.close()
+
+    output = BytesIO()
+
+    with pd.ExcelWriter(output, engine="openpyxl") as writer:
+        df.to_excel(
+            writer,
+            index=False,
+            sheet_name="Atualizacoes"
+        )
+
+    output.seek(0)
+
+    return send_file(
+        output,
+        as_attachment=True,
+        download_name=f"Atualizacoes_{projeto}.xlsx",
+        mimetype="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    )
+
 # ============================================================
 # EXECUÇÃO
 # ============================================================

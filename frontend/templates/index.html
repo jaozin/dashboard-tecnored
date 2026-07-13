@@ -139,25 +139,29 @@
 
                 </div>
 
-                <div>
+                <div class="flex items-center gap-3">
 
-                <select
-                    class="border rounded px-3 py-2"
-                    onchange="window.location='/?projeto=' + this.value"
-                >
-
-                    {% for projeto in data.projetos %}
-
-                        <option
-                            value="{{ projeto }}"
-                            {% if projeto == projeto_selecionado %}selected{% endif %}
+                        <select
+                            class="border rounded px-3 py-2"
+                            onchange="window.location='/?projeto=' + this.value"
                         >
-                            {{ projeto }}
-                        </option>
 
-                    {% endfor %}
+                            {% for projeto in data.projetos %}
 
-                </select>
+                                <option
+                                    value="{{ projeto }}"
+                                    {% if projeto == projeto_selecionado %}selected{% endif %}
+                                >
+                                    {{ projeto }}
+                                </option>
+
+                            {% endfor %}
+
+                        </select>
+
+                        <a href="/exportar_atualizacoes?projeto={{ projeto_selecionado }}" class="bg-[#014E4E] hover:bg-[#013B3B] text-white px-4 py-2 rounded-lg text-sm font-medium shadow">
+                         📗 Exportar
+                        </a>
                 </div>
 
         </header>
@@ -234,23 +238,26 @@
                     <div id="n3-avancos-geral" class="n3-avancos-tabs block bg-white p-6 rounded-xl border"><h4>Visão Consolidada de Avanços Semanais</h4></div>
                     <div id="n3-avancos-docs"class="n3-avancos-tabs hidden bg-white p-6 rounded-xl border"><h4 class="font-bold text-gray-800 mb-4">Documentos Planejados para Emissão</h4>
                     <div class="overflow-auto"><table class="w-full text-sm"><thead><tr class="border-b bg-gray-50"><th class="text-left p-2">Documento</th><th class="text-left p-2">Disciplina</th>
-                    <th class="text-left p-2">Etapa</th><th class="text-center p-2">Ação</th></tr></thead><tbody>{% for doc in data.documentos_emitir %}<tr class="border-b"><td class="p-2">{{ doc.documento }}</td> 
-                    <td class="p-2">{{ doc.disciplina }}</td><td class="p-2">{{ doc.tarefa }}</td><td class="p-2 text-center"><button onclick="emitirDocumento('{{ projeto_selecionado }}','{{ doc.documento }}',this)"
-                    class="bg-green-600 hover:bg-green-700 transition-all duration-300 text-white px-3 py-1 rounded-full text-xs shadow-sm hover:shadow-md">📤 Emitir</button>
-                    </td></tr>{% endfor %}</tbody></table></div></div>
+                    <th class="text-left p-2">Etapa</th><th class="text-center p-2">Ação</th></tr></thead><tbody>{% for doc in data.documentos_emitir %}<tr class="border-b {% if doc.documento in data.documentos_emitidos %}bg-green-100{% endif %}"
+                    {% if doc.documento in data.documentos_emitidos %}style="text-decoration: line-through;"{% endif %}><td class="p-2">{{ doc.documento }}</td><td class="p-2">{{ doc.disciplina }}</td>
+                    <td class="p-2">{{ doc.tarefa }}</td><td class="p-2 text-center"><button onclick="emitirDocumento('{{ projeto_selecionado }}','{{ doc.documento }}','Sprint Atual',this)"
+                    {% if doc.documento in data.documentos_emitidos %}disabled{% endif %}
+                    class="{% if doc.documento in data.documentos_emitidos %}bg-green-700{% else %}bg-green-600 hover:bg-green-700{% endif %} transition-all duration-300 text-white px-3 py-1 rounded-full text-xs shadow-sm hover:shadow-md">
+                    {% if doc.documento in data.documentos_emitidos %}✅ Emitido{% else %}📤 Emitir{% endif %}</button></td></tr>{% endfor %}
+                    </tbody></table></div></div>
 
                     <div id="n3-avancos-avaliacao"class="n3-avancos-tabs hidden bg-white p-6 rounded-xl border"><h4 class="font-bold text-gray-800 mb-4">Documentos em Avaliação do Cliente</h4><table class="w-full text-sm">
                     <thead><tr class="border-b bg-gray-50"><th class="text-left p-2">Documento</th><th class="text-left p-2">Disciplina</th><th class="text-left p-2">Etapa</th></tr></thead><tbody>{% for doc in data.avaliacao_cliente %}<tr class="border-b">
                     <td class="p-2">{{ doc.documento }}</td><td class="p-2">{{ doc.disciplina }}</td><td class="p-2">{{ doc.tarefa }}</td></tr>{% endfor %}</tbody></table></div>
 
-                    <div id="n3-avancos-comentario"class="n3-avancos-tabs hidden bg-white p-6 rounded-xl border"><h4 class="font-bold text-gray-800 mb-4">Documentos em Atendimento de Comentários</h4><table class="w-full text-sm">
-                    <thead><tr class="border-b bg-gray-50"><th class="text-left p-2">Documento</th><th class="text-left p-2">Disciplina</th><th class="text-left p-2">Etapa</th><th class="text-center p-2">Ação</th></tr>
-                    </thead><tbody>{% for doc in data.atendimento_comentario %}<tr class="border-b"><td class="p-2">{{ doc.documento }}</td><td class="p-2">{{ doc.disciplina }}</td><td class="p-2">{{ doc.tarefa }}</td>
-                    <td class="p-2 text-center"><button onclick="this.innerHTML='✅ Atendido';this.disabled=true;const linha = this.closest('tr');linha.classList.add('bg-green-100','text-green-800');linha.style.textDecoration='line-through';
-                    linha.style.transition='all 0.4s ease';this.classList.remove('bg-orange-500');this.classList.add('bg-green-700');"
-                    class="bg-orange-500 hover:bg-orange-600 transition-all duration-300 text-white px-3 py-1 rounded-full text-xs shadow-sm hover:shadow-md">💬 Atender</button>
-
-                    </td></tr>{% endfor %}</tbody></table></div>
+                    <div id="n3-avancos-comentario" class="n3-avancos-tabs hidden bg-white p-6 rounded-xl border"><h4 class="font-bold text-gray-800 mb-4">Documentos em Atendimento de Comentários
+                    </h4><table class="w-full text-sm"><thead><tr class="border-b bg-gray-50"><th class="text-left p-2">Documento</th><th class="text-left p-2">Disciplina</th><th class="text-left p-2">Etapa</th><th class="text-center p-2">Ação</th>
+                    </tr></thead><tbody>{% for doc in data.atendimento_comentario %}<tr class="border-b {% if doc.documento in data.comentarios_atendidos %}bg-green-100{% endif %}"
+                    {% if doc.documento in data.comentarios_atendidos %}style="text-decoration: line-through;"{% endif %}><td class="p-2">{{ doc.documento }}</td><td class="p-2">{{ doc.disciplina }}</td><td class="p-2">{{ doc.tarefa }}</td>
+                    <td class="p-2 text-center"><button onclick="atenderComentario('{{ projeto_selecionado }}','{{ doc.documento }}',this)"
+                    {% if doc.documento in data.comentarios_atendidos %}disabled{% endif %}
+                    class="{% if doc.documento in data.comentarios_atendidos %}bg-green-700{% else %}bg-orange-500 hover:bg-orange-600{% endif %} transition-all duration-300 text-white px-3 py-1 rounded-full text-xs shadow-sm hover:shadow-md">
+                    {% if doc.documento in data.comentarios_atendidos %}✅ Atendido{% else %}💬 Atender{% endif %}</button></td></tr>{% endfor %}</tbody></table></div>
 
                     <div id="n3-avancos-aprovacao"class="n3-avancos-tabs hidden bg-white p-6 rounded-xl border"><h4 class="font-bold text-gray-800 mb-4">Documentos Aprovados</h4><table class="w-full text-sm"><thead>
                     <tr class="border-b bg-gray-50"><th class="text-left p-2">Documento</th><th class="text-left p-2">Disciplina</th><th class="text-left p-2">Etapa</th></tr></thead><tbody>{% for doc in data.aprovacao %}
@@ -313,12 +320,13 @@
                     <div id="n3-lookahead-geral" class="n3-lookahead-tabs block bg-white p-6 rounded-xl border"><h4>Look Ahead Geral - Próximo Horizonte</h4></div>
                     <div id="n3-lookahead-docs" class="n3-lookahead-tabs hidden bg-white p-6 rounded-xl border"><h4 class="font-bold text-gray-800 mb-4">Documentos Planejados para Emissão - Próximo Sprint</h4><div class="overflow-auto">
                     <table class="w-full text-sm"><thead><tr class="border-b bg-gray-50"><th class="text-left p-2">Documento</th><th class="text-left p-2">Disciplina</th><th class="text-left p-2">Etapa</th>
-                    <th class="text-center p-2">Ação</th>                           
-                
-                   </tr></thead><tbody>{% for doc in data.prox_emitir %}<tr class="border-b"><td class="p-2">{{ doc.documento }}</td><td class="p-2">{{ doc.disciplina }}</td><td class="p-2">{{ doc.tarefa }}</td><td class="p-2 text-center"><button
-                   onclick="this.innerHTML='✅ Emitido';this.disabled=true;const linha = this.closest('tr');linha.classList.add('bg-green-100','text-green-800');linha.style.textDecoration='line-through';linha.style.transition='all 0.4s ease';this.classList.remove('bg-green-600');
-                   this.classList.add('bg-green-700');"class="bg-green-600 hover:bg-green-700 transition-all duration-300 text-white px-3 py-1 rounded-full text-xs shadow-sm hover:shadow-md">
-                  📤 Emitir</button></td></tr>{% endfor %}</tbody></table></div></div>
+                    <th class="text-center p-2">Ação</th>                                        
+                   </tr></thead><tbody>{% for doc in data.prox_emitir %}<tr class="border-b {% if doc.documento in data.documentos_emitidos %}
+                    bg-green-100{% endif %}"{% if doc.documento in data.documentos_emitidos %}style="text-decoration: line-through;"{% endif %}>                  
+                    <td class="p-2">{{ doc.documento }}</td><td class="p-2">{{ doc.disciplina }}</td><td class="p-2">{{ doc.tarefa }}</td><td class="p-2 text-center">
+                   <button onclick="emitirDocumento('{{ projeto_selecionado }}','{{ doc.documento }}','Proximo Sprint',this)"{% if doc.documento in data.documentos_emitidos %}disabled{% endif %} 
+                   class="{% if doc.documento in data.documentos_emitidos %}bg-green-700{% else %}bg-green-600 hover:bg-green-700{% endif %} transition-all duration-300 text-white px-3 py-1 rounded-full text-xs shadow-sm hover:shadow-md">                 
+                  {% if doc.documento in data.documentos_emitidos %}✅ Emitido{% else %}📤 Emitir{% endif %}</button></td></tr>{% endfor %}</tbody></table></div></div>
 
 
                     <div id="n3-lookahead-avaliacao" class="n3-lookahead-tabs hidden bg-white p-6 rounded-xl border"><h4 class="font-bold text-gray-800 mb-4">Avaliações Planejadas - Próximo Sprint</h4><table class="w-full text-sm">
@@ -327,10 +335,12 @@
 
                     <div id="n3-lookahead-comentario"class="n3-lookahead-tabs hidden bg-white p-6 rounded-xl border"><h4 class="font-bold text-gray-800 mb-4">Atendimento de Comentários - Próximo Sprint</h4>
                     <table class="w-full text-sm"><thead><tr class="border-b bg-gray-50"><th class="text-left p-2">Documento</th><th class="text-left p-2">Disciplina</th><th class="text-left p-2">Etapa</th><th class="text-center p-2">Ação</th></tr></thead>
-                    <tbody>{% for doc in data.prox_comentario %}<tr class="border-b"><td class="p-2">{{ doc.documento }}</td><td class="p-2">{{ doc.disciplina }}</td><td class="p-2">{{ doc.tarefa }}</td><td class="p-2 text-center">
-                    <button onclick="this.innerHTML='✅ Atendido';this.disabled=true;const linha = this.closest('tr');linha.classList.add('bg-green-100','text-green-800');linha.style.textDecoration='line-through';
-                    linha.style.transition='all 0.4s ease';this.classList.remove('bg-orange-500');this.classList.add('bg-green-700');"
-                    class="bg-orange-500 hover:bg-orange-600 transition-all duration-300 text-white px-3 py-1 rounded-full text-xs shadow-sm hover:shadow-md">💬 Atender</button></td></tr>{% endfor %}</tbody>  
+                    <tbody>{% for doc in data.prox_comentario %}<tr class="border-b {% if doc.documento in data.comentarios_atendidos %}bg-green-100{% endif %}"
+                        {% if doc.documento in data.comentarios_atendidos %}style="text-decoration: line-through;"{% endif %}>                   
+                    <td class="p-2">{{ doc.documento }}</td><td class="p-2">{{ doc.disciplina }}</td><td class="p-2">{{ doc.tarefa }}</td><td class="p-2 text-center">
+                    <button onclick="atenderComentario('{{ projeto_selecionado }}','{{ doc.documento }}',this)"{% if doc.documento in data.comentarios_atendidos %}disabled{% endif %}
+                    class="{% if doc.documento in data.comentarios_atendidos %}bg-green-700{% else %}bg-orange-500 hover:bg-orange-600{% endif %} transition-all duration-300 text-white px-3 py-1 rounded-full text-xs shadow-sm hover:shadow-md">                  
+                    {% if doc.documento in data.comentarios_atendidos %}✅ Atendido{% else %}💬 Atender{% endif %}</button></td></tr>{% endfor %}</tbody>  
                     </table></div>
 
                     <div id="n3-lookahead-aprovacao"class="n3-lookahead-tabs hidden bg-white p-6 rounded-xl border"><h4 class="font-bold text-gray-800 mb-4">Aprovações Planejadas - Próximo Sprint</h4><table class="w-full text-sm">
@@ -341,11 +351,133 @@
 
             <div id="n1-histograma" class="n1-container hidden space-y-6">
                 <div class="flex space-x-2 border-b border-gray-200 pb-3">
-                    <button onclick="switchNivel2('n2-hist-alocacao', 'n2-hist-tabs', this)" class="btn-n2 px-4 py-1.5 rounded-lg font-bold bg-[#014E4E] text-white text-xs transition">Alocação de recursos</button>
+
+                    <button onclick="switchNivel2('n2-hist-semanal','n2-hist-tabs',this)"class="btn-n2 px-4 py-1.5 rounded-lg font-bold bg-[#014E4E] text-white text-xs transition">Semanal</button>
+                    <button onclick="switchNivel2('n2-hist-diario','n2-hist-tabs',this)"class="btn-n2 px-4 py-1.5 rounded-lg font-semibold bg-white border text-gray-700 text-xs transition">Diário</button>
                 </div>
-                <div id="n2-hist-alocacao" class="n2-hist-tabs block bg-white p-6 rounded-xl border">
-                    <h4 class="font-bold text-gray-800">Histograma de Alocação de Recursos</h4>
+
+                <div class="flex items-center gap-4 mb-4">
+
+                <label class="text-sm font-medium">
+                    Período:
+                </label>
+
+                <select
+                    id="periodo_histograma"
+                    onchange="alterarPeriodoHistograma()"
+                    class="border rounded px-3 py-2"
+                >
+
+                    <option value="30">
+                        Últimos 30 dias
+                    </option>
+
+                    <option value="60">
+                        Últimos 60 dias
+                    </option>
+
+                    <option value="mes">
+                        Mês Atual
+                    </option>
+
+                    <option value="custom">
+                        Personalizado
+                    </option>
+
+                </select>
+
+                <div
+                    id="datas_personalizadas"
+                    class="hidden flex items-center gap-3"
+                >
+
+                    <label class="text-sm">
+                        De:
+                    </label>
+
+                    <input
+                        type="date"
+                        class="border rounded px-3 py-2"
+                    >
+
+                    <label class="text-sm">
+                        Até:
+                    </label>
+
+                    <input
+                        type="date"
+                        class="border rounded px-3 py-2"
+                    >
+
+                    <button
+                        class="bg-[#014E4E] hover:bg-[#013B3B] text-white px-4 py-2 rounded-lg"
+                    >
+                        Aplicar
+                    </button>
+
                 </div>
+
+</div>
+
+                <div id="n2-hist-semanal"class="n2-hist-tabs block bg-white p-6 rounded-xl border">
+                <h4 class="font-bold text-gray-800 mb-4">Histograma Semanal</h4>
+
+                    <div class="overflow-x-auto">
+
+                        <table class="text-sm border-collapse min-w-max">
+
+                            <thead>
+
+                                <tr class="bg-gray-100">
+
+                                    <th class="border p-2 sticky left-0 bg-gray-100">
+                                        Recurso
+                                    </th>
+
+                                    <th class="border p-2">Sem 1</th>
+                                    <th class="border p-2">Sem 2</th>
+                                    <th class="border p-2">Sem 3</th>
+                                    <th class="border p-2">Sem 4</th>
+                                    <th class="border p-2">Sem 5</th>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td class="border p-2 font-medium sticky left-0 bg-white">
+                                        Eng. Mecânico
+                                    </td>
+
+                                    <td class="border p-2 bg-green-200 text-center">2</td>
+                                    <td class="border p-2 bg-green-400 text-center">4</td>
+                                    <td class="border p-2 bg-green-600 text-white text-center">6</td>
+                                    <td class="border p-2 bg-green-300 text-center">3</td>
+                                    <td class="border p-2 bg-green-500 text-white text-center">5</td>
+
+                                </tr>
+
+                                <tr>
+
+                                    <td class="border p-2 font-medium sticky left-0 bg-white">
+                                        Projetista Mecânico
+                                    </td>
+
+                                    <td class="border p-2 bg-green-300 text-center">3</td>
+                                    <td class="border p-2 bg-green-600 text-white text-center">8</td>
+                                    <td class="border p-2 bg-green-700 text-white text-center">10</td>
+                                    <td class="border p-2 bg-green-500 text-white text-center">7</td>
+                                    <td class="border p-2 bg-green-300 text-center">4</td>
+                                    </tr></tbody></table>
+                    </div>
+                </div>
+
+                <div id="n2-hist-diario"class="n2-hist-tabs hidden bg-white p-6 rounded-xl border"><h4 class="font-bold text-gray-800">Histograma Diário</h4></div>
+                </div>
+                
             </div>
 
             <div id="n1-mudancas" class="n1-container hidden bg-white p-6 rounded-xl border"><h3>Gestão de Mudanças</h3></div>
@@ -476,6 +608,126 @@
                 });
             }
         });
+
+
+                    async function emitirDocumento(
+                        projeto,
+                        documento,
+                        sprint,
+                        botao
+                    ) {
+
+                        const formData = new FormData();
+
+                        formData.append(
+                            "projeto",
+                            projeto
+                        );
+
+                        formData.append(
+                            "documento",
+                            documento
+                        );
+
+                        formData.append(       
+                         "sprint",       
+                          sprint    
+                        );
+
+                        const resposta = await fetch(
+                            "/emitir",
+                            {
+                                method: "POST",
+                                body: formData
+                            }
+                        );
+
+                        if (resposta.ok) {
+
+                            botao.innerHTML = "✅ Emitido";
+                            botao.disabled = true;
+
+                            const linha = botao.closest("tr");
+
+                            linha.classList.add(
+                                "bg-green-100",
+                                "text-green-800"
+                            );
+
+                            linha.style.textDecoration =
+                                "line-through";
+                        }
+
+                    }
+
+                    async function atenderComentario(
+                        projeto,
+                        documento,
+                        botao
+                    ) {
+
+                        const formData = new FormData();
+
+                        formData.append(
+                            "projeto",
+                            projeto
+                        );
+
+                        formData.append(
+                            "documento",
+                            documento
+                        );
+
+                        const resposta = await fetch(
+                            "/atender_comentario",
+                            {
+                                method: "POST",
+                                body: formData
+                            }
+                        );
+
+                        if (resposta.ok) {
+
+                            botao.innerHTML = "✅ Atendido";
+                            botao.disabled = true;
+
+                            const linha = botao.closest("tr");
+
+                            linha.classList.add(
+                                "bg-green-100",
+                                "text-green-800"
+                            );
+
+                            linha.style.textDecoration =
+                                "line-through";
+                        }
+
+                    }
+
+                    function alterarPeriodoHistograma() {
+
+                        const periodo =
+                            document.getElementById(
+                                "periodo_histograma"
+                            );
+
+                        const datas =
+                            document.getElementById(
+                                "datas_personalizadas"
+                            );
+
+                        if (periodo.value === "custom") {
+
+                            datas.classList.remove("hidden");
+
+                        } else {
+
+                            datas.classList.add("hidden");
+
+                        }
+
+                    }
+
     </script>
 </body>
 </html>

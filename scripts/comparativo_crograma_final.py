@@ -202,7 +202,10 @@ df_atrasadas_list = df_final[(df_final["pct_calc"] < 1) & (df_final["Término"] 
 # ============================================================
 # 6. Aba Curva S
 # ============================================================
-start_date = pd.Timestamp("2026-03-20")
+start_date = df_final["Início_LB_R0"].min()
+
+if pd.isna(start_date):
+    start_date = df_final["Início"].min()
 end_date = df_final["Término_LB_R0"].max()
 
 if pd.isna(end_date):

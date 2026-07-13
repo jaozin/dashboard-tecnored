@@ -58,6 +58,12 @@ VALUES
 
 conn.commit()
 
+print("\nCOLUNAS_ACOES_USUARIO")
+
+cursor.execute("PRAGMA table_info(acoes_usuario)")
+
+for coluna in cursor.fetchall():
+    print(coluna)
 
 print("\nACOES_USUARIO")
 
@@ -65,6 +71,13 @@ cursor.execute("""
 SELECT *
 FROM acoes_usuario
 """)
+
+print("\nCOLUNAS_HISTOGRAMA_RECURSOS")
+
+for c in conn.execute(
+    "PRAGMA table_info(histograma_recursos)"
+):
+    print(c)
 
 for linha in cursor.fetchall():
     print(linha)
