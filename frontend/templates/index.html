@@ -212,7 +212,7 @@
                 </div>
 
                 <div class="bg-white p-6 rounded-xl border shadow-inner">
-                    <h4 class="text-sm font-bold text-gray-500 mb-4 uppercase tracking-wider">Avanço por Disciplina — Emissões Iniciais (EI) vs  Aprovações (AP)</h4>
+                    <h4 class="text-lg font-bold text-center text-gray-700 mb-4">Avanço por Disciplina — Emissões Iniciais (EI) x Aprovações (AP)</h4>
                     <div class="relative h-96">
                         <canvas id="chartEmpilhadoResumo"></canvas>
                     </div>
@@ -269,9 +269,11 @@
 
             <div id="n1-cronograma" class="n1-container hidden space-y-6">
                 <div class="flex space-x-2 border-b border-gray-200 pb-3">
-                    <button onclick="switchNivel2('n2-crono-curva', 'n2-crono-tabs', this)" class="btn-n2 px-4 py-1.5 rounded-lg font-bold bg-[#014E4E] text-white text-xs transition">Curva S</button>
-                </div>
+                <button onclick="switchNivel2('n2-crono-curva', 'n2-crono-tabs', this)" class="btn-n2 px-4 py-1.5 rounded-lg font-bold bg-[#014E4E] text-white text-xs transition">Curva S</button>
+                {% if projeto_selecionado == "INTEGRADO" %}<button onclick="switchNivel2('n2-crono-integrado', 'n2-crono-tabs', this)"class="btn-n2 px-4 py-1.5 rounded-lg font-semibold bg-white border text-gray-700 text-xs transition">
+                Integrado</button>{% endif %}
 
+                </div>
                 <div id="n2-crono-curva" class="n2-crono-tabs block space-y-6">
                     <div class="flex space-x-6 border-b border-gray-200 text-xs font-medium">
                         <button onclick="switchNivel3('n3-curva-fisico', 'n3-curva-tabs', this)" class="btn-n3 pb-2 border-b-2 border-[#014E4E] text-[#014E4E] font-bold">Avanço Físico</button>
@@ -292,9 +294,13 @@
                     <th class="p-2 text-center">Avaliação</th><th class="p-2 text-center">Comentário</th><th class="p-2 text-center">Aprovação</th><th class="p-2 text-center">%AP</th></tr></thead><tbody>{% for item in data.resumo_disciplinas %}
                     <tr class="border-b"><td class="p-2">{{ item.disciplina }}</td><td class="p-2 text-center">{{ item.ei_total }}</td><td class="p-2 text-center">{{ item.ei_concluida }}</td><td class="p-2 text-center">{{ (item.percentual_ei * 100)|round(1) }}%</td>
                     <td class="p-2 text-center">{{ item.avaliacao_cliente }}</td><td class="p-2 text-center">{{ item.atendimento_comentario }}</td><td class="p-2 text-center">{{ item.aprovacao_concluida }}</td><td class="p-2 text-center">{{ (item.percentual_ap * 100)|round(1) }}%</td>
-                    </tr>{% endfor %}</tbody></table></div></div>
+                    </tr>{% endfor %}</tbody></table></div>
                 </div>
-            </div>               
+                </div>
+                {% if projeto_selecionado == "INTEGRADO" %}<div id="n2-crono-integrado"class="n2-crono-tabs hidden bg-white p-6 rounded-xl border overflow-x-auto"><h4 class="font-bold text-gray-800 mb-4">
+                Cronograma Integrado</h4><div id="gantt-integrado"></div></div>{% endif %}
+                                           
+            </div>
             <div id="n1-rac" class="n1-container hidden space-y-6">
                 <div class="flex space-x-2 border-b border-gray-200 pb-3">
                     <button onclick="switchNivel2('n2-rac-s', 'n2-rac-tabs', this)" class="btn-n2 px-4 py-1.5 rounded-lg font-bold bg-[#014E4E] text-white text-xs transition">RAC-S</button>
@@ -351,8 +357,8 @@
 
             <div id="n1-histograma" class="n1-container hidden space-y-6">
                 <div class="flex space-x-2 border-b border-gray-200 pb-3">
-
-                    <button onclick="switchNivel2('n2-hist-semanal','n2-hist-tabs',this)"class="btn-n2 px-4 py-1.5 rounded-lg font-bold bg-[#014E4E] text-white text-xs transition">Semanal</button>
+                    <button onclick="switchNivel2('n2-hist-grafico','n2-hist-tabs',this)"class="btn-n2 px-4 py-1.5 rounded-lg font-bold bg-[#014E4E] text-white text-xs transition">Gráfico</button>
+                    <button onclick="switchNivel2('n2-hist-semanal','n2-hist-tabs',this)"class="btn-n2 px-4 py-1.5 rounded-lg font-semibold bg-white border text-gray-700 text-xs transition">Semanal</button>
                     <button onclick="switchNivel2('n2-hist-diario','n2-hist-tabs',this)"class="btn-n2 px-4 py-1.5 rounded-lg font-semibold bg-white border text-gray-700 text-xs transition">Diário</button>
                 </div>
 
@@ -418,27 +424,42 @@
                 </div>
 
 </div>
+                    <div id="n2-hist-grafico"
+                        class="n2-hist-tabs block bg-white p-6 rounded-xl border">
 
-                <div id="n2-hist-semanal"class="n2-hist-tabs block bg-white p-6 rounded-xl border">
-                <h4 class="font-bold text-gray-800 mb-4">Histograma Semanal</h4>
+                        <h4 class="font-bold text-gray-800 mb-4 text-center text-lg">Crescimento do Escopo x Desvio de Horas</h4>
 
+                        <div class="relative h-[600px]">
+                            <canvas id="graficoEscopoHoras"></canvas>
+                        </div>
+
+                    </div>
+
+
+                <div id="n2-hist-semanal" class="n2-hist-tabs hidden bg-white p-6 rounded-xl border">
+
+                    <h4 class="font-bold text-gray-800 mb-4">Histograma Semanal (Dias)</h4>
                     <div class="overflow-x-auto">
 
-                        <table class="text-sm border-collapse min-w-max">
+                        <table class="text-xs border-collapse min-w-max">
 
                             <thead>
 
                                 <tr class="bg-gray-100">
 
-                                    <th class="border p-2 sticky left-0 bg-gray-100">
+                                    <th class="border px-2 py-1 bg-gray-100 text-xs whitespace-nowrap sticky left-0 z-20">
                                         Recurso
                                     </th>
 
-                                    <th class="border p-2">Sem 1</th>
-                                    <th class="border p-2">Sem 2</th>
-                                    <th class="border p-2">Sem 3</th>
-                                    <th class="border p-2">Sem 4</th>
-                                    <th class="border p-2">Sem 5</th>
+                                    <th class="border px-2 py-1 bg-gray-100 text-xs whitespace-nowrap sticky left-0 z-20">
+                                        Tipo
+                                    </th>
+
+                                    {% for periodo in data.periodos_histograma %}
+                                    <th class="border px-1 py-1 text-center text-xs whitespace-nowrap min-w-[70px] font-semibold">
+                                        {{ periodo }}
+                                    </th>
+                                    {% endfor %}
 
                                 </tr>
 
@@ -446,50 +467,553 @@
 
                             <tbody>
 
-                                <tr>
+                                    {% for linha in data.linhas_histograma %}
 
-                                    <td class="border p-2 font-medium sticky left-0 bg-white">
-                                        Eng. Mecânico
-                                    </td>
+                                    <tr class="h-6">
 
-                                    <td class="border p-2 bg-green-200 text-center">2</td>
-                                    <td class="border p-2 bg-green-400 text-center">4</td>
-                                    <td class="border p-2 bg-green-600 text-white text-center">6</td>
-                                    <td class="border p-2 bg-green-300 text-center">3</td>
-                                    <td class="border p-2 bg-green-500 text-white text-center">5</td>
+                                        <td class="border px-2 py-1 text-xs whitespace-nowrap min-w-[160px] sticky left-0 bg-white z-10">
+                                            {{ linha.recurso }}
+                                        </td>
+
+                                        <td class="border px-2 py-1 text-center text-xs sticky left-[160px] bg-white z-10">
+                                            {{ linha.tipo }}
+                                        </td>
+
+                                        {% set chave = linha.recurso ~ "|" ~ linha.tipo %}
+
+                                        {% for periodo in data.periodos_histograma %}
+
+                                        {% set valor = (
+                                            data.histograma_semanal[chave][periodo]
+                                            if chave in data.histograma_semanal
+                                            and periodo in data.histograma_semanal[chave]
+                                            else None
+                                        ) %}
+
+                                        {% set chave_prev = linha.recurso ~ "|" ~ periodo %}
+
+                                        {% set previsto = (
+                                            data.previstos_histograma[chave_prev]
+                                            if chave_prev in data.previstos_histograma
+                                            else None
+                                        ) %}
+
+                                        <td
+                                            class="
+                                                border px-1 py-1 text-center text-sm font-medium
+
+                                                {% if linha.tipo == 'Real'
+                                                    and valor is not none
+                                                    and previsto is not none
+                                                    and valor > previsto %}
+                                                    bg-red-100
+                                                {% endif %}
+                                            "
+                                        >
+
+                                            {{ "%.2f"|format(valor) if valor is not none else "-" }}
+
+                                        </td>
+
+                                        {% endfor %}
+
+                                    </tr>
+
+                                    {% endfor %}
+
+                                </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+                <div id="n2-hist-diario" class="n2-hist-tabs hidden bg-white p-6 rounded-xl border">
+
+                    <h4 class="font-bold text-gray-800 mb-4">
+                        Histograma Diário (Dias)
+                    </h4>
+
+                    <div class="overflow-x-auto">
+
+                        <table class="text-xs border-collapse min-w-max">
+
+                            <thead>
+
+                                <tr class="bg-gray-100">
+
+                                    <th class="border px-2 py-1 bg-gray-100 text-xs whitespace-nowrap sticky left-0 z-20">
+                                        Recurso
+                                    </th>
+
+                                    <th class="border px-2 py-1 bg-gray-100 text-xs whitespace-nowrap sticky left-0 z-20">
+                                        Tipo
+                                    </th>
+
+                                    {% for periodo in data.periodos_diario %}
+                                    <th class="border px-1 py-1 text-center text-xs whitespace-nowrap min-w-[65px] font-semibold">
+                                        {{ periodo }}
+                                    </th>
+                                    {% endfor %}
 
                                 </tr>
 
-                                <tr>
+                            </thead>
 
-                                    <td class="border p-2 font-medium sticky left-0 bg-white">
-                                        Projetista Mecânico
+                            <tbody>
+
+                                {% for linha in data.linhas_histograma %}
+
+                                <tr class="h-6">
+
+                                    <td class="border px-2 py-1 text-xs whitespace-nowrap min-w-[160px] sticky left-0 bg-white z-10">
+                                        {{ linha.recurso }}
                                     </td>
 
-                                    <td class="border p-2 bg-green-300 text-center">3</td>
-                                    <td class="border p-2 bg-green-600 text-white text-center">8</td>
-                                    <td class="border p-2 bg-green-700 text-white text-center">10</td>
-                                    <td class="border p-2 bg-green-500 text-white text-center">7</td>
-                                    <td class="border p-2 bg-green-300 text-center">4</td>
-                                    </tr></tbody></table>
+                                    <td class="border px-2 py-1 text-center text-xs sticky left-[160px] bg-white z-10">
+                                        {{ linha.tipo }}
+                                    </td>
+
+                                    {% set chave = linha.recurso ~ "|" ~ linha.tipo %}
+
+                                    {% for periodo in data.periodos_diario %}
+
+                                    {% set valor = (
+                                    data.histograma_diario[chave][periodo]
+                                    if chave in data.histograma_diario
+                                    and periodo in data.histograma_diario[chave]
+                                    else 0
+                                ) %}
+
+                                {% set chave_prev = linha.recurso ~ "|Prev" %}
+
+                                {% set previsto = (
+                                    data.histograma_diario[chave_prev][periodo]
+                                    if chave_prev in data.histograma_diario
+                                    and periodo in data.histograma_diario[chave_prev]
+                                    else 0
+                                ) %}
+
+                                <td
+                                    class="
+                                        border px-1 py-1 text-center text-sm font-medium
+
+                                        {% if linha.tipo == 'Real'
+                                            and valor > previsto %}
+                                            bg-red-100
+                                        {% endif %}
+                                    "
+                                >
+
+                                    {{ ("%.2f"|format(valor)).replace(".", ",") }}
+
+                                </td>
+
+                                    {% endfor %}
+
+                                </tr>
+
+                                {% endfor %}
+
+                            </tbody>
+
+                        </table>
+
                     </div>
-                </div>
 
-                <div id="n2-hist-diario"class="n2-hist-tabs hidden bg-white p-6 rounded-xl border"><h4 class="font-bold text-gray-800">Histograma Diário</h4></div>
                 </div>
-                
-            </div>
-
+                </div>
             <div id="n1-mudancas" class="n1-container hidden bg-white p-6 rounded-xl border"><h3>Gestão de Mudanças</h3></div>
             <div id="n1-licoes" class="n1-container hidden bg-white p-6 rounded-xl border"><h3>Banco de Lições Aprendidas</h3></div>
             <div id="n1-riscos" class="n1-container hidden bg-white p-6 rounded-xl border"><h3>Matriz de Riscos Operacionais</h3></div>
             <div id="n1-custos" class="n1-container hidden bg-white p-6 rounded-xl border"><h3>Controle de Custos e Desembolsos</h3></div>
-            <div id="n1-kpi" class="n1-container hidden bg-white p-6 rounded-xl border"><h3>Indicadores Chave de Performance (KPI)</h3></div>
+            <div id="n1-kpi" class="n1-container hidden space-y-6"><div class="bg-white p-6 rounded-xl border">
+
+                
+                    <h3 class="text-2xl font-bold text-center text-gray-800 mb-6">
+                        Indicadores Chave de Performance (KPI)
+                    </h3>
+
+                    <!-- ESTRATÉGICOS -->
+
+                    <div class="mb-8">
+
+                        <h4 class="text-lg font-bold text-gray-700 mb-4">
+                            Indicadores Estratégicos
+                        </h4>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                            <div class="bg-gray-50 p-6 rounded-xl border">
+                                <div class="text-xs text-gray-500 font-bold uppercase">
+                                    EBITDA
+                                </div>
+
+                                <div class="text-4xl mt-3">
+                                    🚧
+                                </div>
+
+                                <div class="mt-2 text-sm text-gray-500">
+                                    Em Implementação
+                                </div>
+                            </div>
+
+                            <div class="bg-gray-50 p-6 rounded-xl border">
+                                <div class="text-xs text-gray-500 font-bold uppercase">
+                                    NPS
+                                </div>
+
+                                <div class="text-4xl mt-3">
+                                    🚧
+                                </div>
+
+                                <div class="mt-2 text-sm text-gray-500">
+                                    Em Implementação
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- TÁTICOS -->
+
+                    <div class="mb-8">
+
+                        <h4 class="text-lg font-bold text-gray-700 mb-4">
+                            Indicadores Táticos
+                        </h4>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                            <div class="bg-gray-50 p-6 rounded-xl border">
+                                <div class="text-xs text-gray-500 font-bold uppercase">
+                                    CPI
+                                </div>
+
+                                <div class="text-4xl mt-3">
+                                    🚧
+                                </div>
+
+                                <div class="mt-2 text-sm text-gray-500">
+                                    Aguardando Integração Financeira
+                                </div>
+                            </div>
+
+                            <div class="bg-gray-50 p-6 rounded-xl border">
+                                <div class="text-xs text-gray-500 font-bold uppercase">
+                                    SPI
+                                </div>
+
+                                <div class="text-4xl mt-3">
+                                    🚧
+                                </div>
+
+                                <div class="mt-2 text-sm text-gray-500">
+                                    Aguardando Estrutura EVM
+                                </div>
+                            </div>
+
+                            <div class="bg-gray-50 p-6 rounded-xl border">
+                                <div class="text-xs text-gray-500 font-bold uppercase">
+                                    Retrabalho
+                                </div>
+
+                                <div class="text-4xl mt-3">
+                                    🚧
+                                </div>
+
+                                <div class="mt-2 text-sm text-gray-500">
+                                    Aguardando Apontamento HH
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- OPERACIONAIS -->
+
+                    <div>
+
+                        <h4 class="text-lg font-bold text-gray-700 mb-4">
+                            Indicadores Operacionais
+                        </h4>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                            <div class="bg-gray-50 p-6 rounded-xl border">
+                                <div class="text-xs text-gray-500 font-bold uppercase">
+                                    PPC
+                                </div>
+
+                                <div class="text-4xl mt-3">
+                                    🚧
+                                </div>
+
+                                <div class="mt-2 text-sm text-gray-500">
+                                    Em Implementação
+                                </div>
+                            </div>
+
+                            <div class="bg-gray-50 p-6 rounded-xl border">
+                                <div class="text-xs text-gray-500 font-bold uppercase">
+                                    Produtividade
+                                </div>
+
+                                <div class="text-4xl mt-3">
+                                    🚧
+                                </div>
+
+                                <div class="mt-2 text-sm text-gray-500">
+                                    Em Implementação
+                                </div>
+                            </div>
+
+                            <div class="bg-gray-50 p-6 rounded-xl border">
+                                <div class="text-xs text-gray-500 font-bold uppercase">
+                                    Taxa de Frequência
+                                </div>
+
+                                <div class="text-4xl mt-3">
+                                    🚧
+                                </div>
+
+                                <div class="mt-2 text-sm text-gray-500">
+                                    Em Implementação
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+        </div>
 
         </main>
     </div>
 
     <script>
+
+                const dadosKpiHistograma =
+                    {{ data.histograma_kpis|tojson }};
+
+                console.log(dadosKpiHistograma);             
+                const cronogramaIntegrado =    
+                {{ data.cronograma_integrado|tojson }}; 
+                
+                console.log(cronogramaIntegrado);
+
+                const semanas = [];
+
+                    let data = new Date(2026, 0, 1);
+
+                    while (data.getFullYear() === 2026) {
+
+                        semanas.push(
+                            `${data.getDate()}/${data.getMonth() + 1}`
+                        );
+
+                        data.setDate(
+                            data.getDate() + 7
+                        );
+                    }
+
+                    console.log(semanas);
+
+                const container =
+                    document.getElementById(
+                        "gantt-integrado"
+                    );
+
+                if (container) {
+
+                    let html = `
+
+                        <div
+                            class="grid"
+                            style="
+                                grid-template-columns:
+                                100px
+                                280px
+                                90px
+                                55px
+                                55px
+                                55px
+                                55px
+                                45px
+                                repeat(${semanas.length}, 45px);"
+                        >
+
+                            <div class="font-semibold text-[10px] p-1 border-b">PROJETO</div>
+                            <div class="font-semibold text-[10px] p-1 border-b">ATIVIDADE</div>
+                            <div class="font-semibold text-[10px] p-1 border-b">RESP.</div>
+                            <div class="font-semibold text-[10px] p-1 border-b">I. LB</div>
+                            <div class="font-semibold text-[10px] p-1 border-b">T. LB</div>
+                            <div class="font-semibold text-[10px] p-1 border-b">I. REAL</div>
+                            <div class="font-semibold text-[10px] p-1 border-b">T.REAL</div>
+                            <div class="font-semibold text-[10px] p-1 border-b">% CONCL.</div>`;
+
+                    semanas.forEach(s => {
+
+                        html += `
+                            <div
+                                class="text-[10px] text-center border-b p-1 font-semibold"
+                            >
+                                ${s}
+                            </div>
+                        `;
+
+                    });
+
+                    html += `
+                    </div>
+                    `;
+
+                    cronogramaIntegrado.forEach(item => {
+
+                        html += `
+                            <div
+                                class="grid"
+                                style="
+                                    grid-template-columns:
+                                    100px
+                                    280px
+                                    90px
+                                    55px
+                                    55px
+                                    55px
+                                    55px
+                                    45px
+                                    ${semanas.length * 45}px;
+                                "
+                            >
+
+                                <div style="width:120px" class="text-[11px] p-1" border-b">
+                                    ${item.projeto}
+                                </div>
+
+                                <div style="width:280px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;"class="text-[11px] p-1"title="${item.atividade}">
+                                     ${item.atividade}
+                                </div>
+
+                                <div style="width:90px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;"class="text-[11px] p-1"title="${item.responsavel}">
+                                     ${item.responsavel}
+                                </div>
+                               <div style="width:80px" class="text-[11px] p-1" border-b">
+                                    ${
+                                        item.inicio_lb
+                                            ? item.inicio_lb.substring(8,10) + "/" +
+                                            item.inicio_lb.substring(5,7) + "/" +
+                                            item.inicio_lb.substring(2,4)
+                                            : ""
+                                    }
+                                </div>
+
+                                <div style="width:80px" class="text-[11px] p-1" border-b">
+                                    ${
+                                        item.termino_lb
+                                            ? item.termino_lb.substring(8,10) + "/" +
+                                            item.termino_lb.substring(5,7) + "/" +
+                                            item.termino_lb.substring(2,4)
+                                            : ""
+                                    }
+                                </div>
+
+                                <div style="width:80px" class="text-[11px] p-1" border-b">
+                                    ${
+                                        item.inicio_real
+                                            ? item.inicio_real.substring(8,10) + "/" +
+                                            item.inicio_real.substring(5,7) + "/" +
+                                            item.inicio_real.substring(2,4)
+                                            : ""
+                                    }
+                                </div>
+
+                                <div style="width:80px" class="text-[11px] p-1" border-b">
+                                    ${
+                                        item.termino_real
+                                            ? item.termino_real.substring(8,10) + "/" +
+                                            item.termino_real.substring(5,7) + "/" +
+                                            item.termino_real.substring(2,4)
+                                            : ""
+                                    }
+                                </div>
+
+                                <div style="width:70px" class="text-[11px] p-1" text-center border-b">
+                                    ${(Number(item.conclusao || 0) * 100).toFixed(0)}%
+                                </div>
+
+                                <div
+                                    style="
+                                        width:${semanas.length * 45}px;
+                                        position:relative;
+                                    "
+                                    class="h-8 border-l bg-gray-50"
+                                >
+
+                                    ${(() => {
+
+                                        const inicio = new Date(item.inicio_lb);
+                                        let termino = new Date(item.termino_lb);
+                                        const fimAno =
+                                            new Date(2026, 11, 31);
+
+                                        if (termino > fimAno) {
+                                            termino.setTime(fimAno.getTime());
+                                        }
+
+                                        const inicioAno = new Date(2026, 0, 1);
+
+                                        const diasInicio =
+                                            Math.max(
+                                                0,
+                                                Math.floor(
+                                                    (inicio - inicioAno) /
+                                                    (1000 * 60 * 60 * 24)
+                                                )
+                                            );
+
+                                        const diasDuracao =
+                                            Math.max(
+                                                1,
+                                                Math.floor(
+                                                    (termino - inicio) /
+                                                    (1000 * 60 * 60 * 24)
+                                                )
+                                            );
+
+                                        const left =
+                                            diasInicio * (45 / 7);
+
+                                        const width =
+                                            diasDuracao * (45 / 7);
+
+                                        return `
+                                            <div
+                                                style="
+                                                    position:absolute;
+                                                    left:${left}px;
+                                                    top:4px;
+                                                    width:${width}px;
+                                                    height:16px;
+                                                    background:#014E4E;
+                                                    border-radius:4px;
+                                                "
+                                            ></div>
+                                        `;
+
+                                    })()}
+
+                                </div>
+
+                                </div>
+                                `;
+
+                    });
+
+                    container.innerHTML = html;
+                }
                 window.addEventListener(
                     'DOMContentLoaded',
                     () => {
@@ -558,7 +1082,19 @@
                 new Chart(ctxBN, {
                     type: 'bar',
                     data: {
-                        labels: dashboardData.grafico_empilhado_resumo ? dashboardData.grafico_empilhado_resumo.labels : [],
+                        labels: dashboardData.grafico_empilhado_resumo? dashboardData.grafico_empilhado_resumo.labels.map(x => {
+
+                                        if (x.length > 15) {
+
+                                            return x.split(" ");
+
+                                        }
+
+                                        return x;
+
+                                    })
+                                    : [],
+
                         datasets: [
                             {
                                 label: 'Emissão Prevista',
@@ -597,10 +1133,36 @@
                     options: {
                         responsive: true,
                         maintainAspectRatio: false,
+
                         scales: {
-                            x: { stacked: false },
-                            y: { stacked: false, beginAtZero: true }
+
+                            x: {
+
+                                stacked: false,
+
+                                ticks: {
+
+                                    autoSkip: false,
+                                    maxRotation: 0,
+                                    minRotation: 0,
+
+                                    font: {
+                                        size: 11
+                                    }
+
+                                }
+
+                            },
+
+                            y: {
+
+                                stacked: false,
+                                beginAtZero: true
+
+                            }
+
                         },
+                       
                         plugins: {
                             legend: { position: 'bottom', labels: { boxWidth: 15, font: { family: 'Poppins', size: 11 } } }
                         }
@@ -608,6 +1170,111 @@
                 });
             }
         });
+
+            // 3. Histograma - Crescimento Escopo x Desvio Horas
+
+            const ctxHist = document.getElementById(
+                'graficoEscopoHoras'
+            );
+
+            if (
+                ctxHist &&
+                dadosKpiHistograma &&
+                dadosKpiHistograma.length > 0
+            ) {
+
+                new Chart(ctxHist, {
+
+                    type: 'bar',
+
+                    data: {
+
+                        labels: dadosKpiHistograma.map(x => {
+
+                            if (x.disciplina === 'STEELSTRUCTURE')
+                                return ['STEEL', 'STRUCTURE'];
+
+                            if (x.disciplina === 'INSTRUMENTATION / AUTOMATION')
+                                return ['INSTRUMENTATION', 'AUTOMATION'];
+
+                            if (x.disciplina === 'UTILITIES SYSTEMS')
+                                return ['UTILITIES', 'SYSTEMS'];
+
+                            if (x.disciplina === 'TELECOMMUNICATIONS')
+                                return ['TELECOM'];
+
+                            return x.disciplina;
+
+                        }),
+
+                        datasets: [
+
+                            {
+                                label: 'Desvio de Horas (%)',
+
+                                data: dadosKpiHistograma.map(
+                                    x => Number(x.desvio_horas * 100).toFixed(2)
+                                ),
+
+                                backgroundColor: '#93C5FD'
+                            },
+
+                            {
+                                label: 'Crescimento do Escopo (%)',
+
+                                data: dadosKpiHistograma.map(
+                                    x => Number(x.crescimento_escopo * 100).toFixed(2)
+                                ),
+
+                                backgroundColor: '#FDE68A'
+                            }
+
+                        ]
+                    },
+
+                    options: {
+
+                        responsive: true,
+
+                        maintainAspectRatio: false,
+
+                        plugins: {
+
+                            legend: {
+                                position: 'bottom'
+                            }
+
+                        },
+
+                        scales: {
+
+                                    x: {
+
+                                        ticks: {
+
+                                            maxRotation: 0,
+                                            minRotation: 0,
+
+                                            font: {
+                                                size: 11,
+                                                weight: 'bold'
+                                            }
+
+                                        }
+
+                                    },
+
+                                    y: {
+                                        beginAtZero: true
+                                    }
+
+                                }
+
+                    }
+
+                });
+
+            }
 
 
                     async function emitirDocumento(

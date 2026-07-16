@@ -91,16 +91,6 @@ CREATE TABLE IF NOT EXISTS acoes_usuario (
     data_acao TEXT NOT NULL
 )
 """)
-try:
-            cursor.execute("""
-            ALTER TABLE acoes_usuario
-            ADD COLUMN data_exportacao TEXT
-            """)
-
-            print("✅ Coluna data_exportacao criada")
-
-except Exception as e:
-            print(f"ℹ️ {e}")
 
 # ============================================================
 # TABELA HISTORICO
@@ -227,14 +217,36 @@ CREATE TABLE IF NOT EXISTS histograma_recursos (
     data_importacao TEXT
 )
 """)
-try:
-    cursor.execute("""
-        ALTER TABLE histograma_recursos
-        ADD COLUMN nivel TEXT
-    """)
-except Exception as e:
-    print(f"ℹ️ {e}")
 
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS histograma_kpis (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    projeto TEXT,
+    disciplina TEXT,
+    desvio_horas REAL,
+    crescimento_escopo REAL
+)
+""")
+
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS cronograma_integrado (
+
+    projeto TEXT,
+    atividade TEXT,
+    responsavel TEXT,
+
+    inicio_lb TEXT,
+    termino_lb TEXT,
+
+    inicio_real TEXT,
+    termino_real TEXT,
+
+    conclusao REAL,
+
+    data_importacao TEXT
+
+)
+""")
 
 # ============================================================
 # FINALIZAR
@@ -250,4 +262,5 @@ print("✅ Tabela curva_s OK")
 print("✅ Tabela resumo_disciplinas OK")
 print("✅ Tabela acoes_usuario OK")
 print("✅ Tabela histograma_recursos OK")
+print("✅ Tabela cronograma_integrado OK")
 print("✅ Banco pronto")

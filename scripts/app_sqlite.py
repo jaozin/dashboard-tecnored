@@ -36,21 +36,82 @@ def carregar_dados_dashboard(projeto):
 
     conn = sqlite3.connect(BANCO)
 
-    try:
-
-        df_projetos = pd.read_sql_query(
+    df_projetos = pd.read_sql_query(
             
-            """
-                SELECT DISTINCT projeto
-                FROM kpis
-                ORDER BY projeto
+        """
+            SELECT DISTINCT projeto
+            FROM kpis
+            ORDER BY projeto
+            """,
+            conn
+        )
+    projetos = ["INTEGRADO"] + sorted(
+        df_projetos["projeto"].tolist()
+        )
+    try:
+        if projeto == "INTEGRADO":
+
+            df_cronograma_integrado = pd.read_sql_query(
+                """
+                SELECT *
+                FROM cronograma_integrado
+                ORDER BY inicio_lb
                 """,
                 conn
             )
-        projetos = ["INTEGRADO"] + sorted(
-        df_projetos["projeto"].tolist()
-        )
 
+            return {
+
+                        "projetos": projetos,
+
+                        "cronograma_integrado": (
+                            df_cronograma_integrado
+                            .fillna("")
+                            .to_dict(orient="records")
+                        ),
+
+                        "histograma_kpis": [],
+                        "periodos_histograma": [],
+                        "periodos_diario": [],
+
+                        "histograma_semanal": {},
+                        "histograma_diario": {},
+
+                        "grafico_empilhado_resumo": {
+
+                            "labels": [],
+
+                            "emissao_prevista": [],
+                            "emissao_real": [],
+
+                            "aprovacao_prevista": [],
+                            "aprovacao_real": []
+
+                        },
+                        "curva_s": {
+
+                            "datas": [],
+                            "previsto": [],
+                            "real": []
+
+                        },
+                        "resumo_disciplinas": [],
+
+                        "funil": {},
+
+                        "kpis": {
+
+                            "total_documentos": 0,
+                            "aderencia": 0,
+                            "comentarios_pendentes": 0,
+                            "saude_recursos": 0,
+                            "taxa_aprovacao": 0,
+                            "avanco_ei_real": 0,
+                            "avanco_financeiro": 0
+
+                        },
+
+                    }
         df_kpi = pd.read_sql_query(
             """
             SELECT *
@@ -289,6 +350,23 @@ def carregar_dados_dashboard(projeto):
         ei_real_pct = float(
             linha_curva["ei_real"]
         )
+
+        ei_previsto_atual = float(
+            linha_curva["ei_previsto_acumulado"]
+        )
+
+        ei_real_atual = float(
+            linha_curva["ei_real_acumulado"]
+        )
+
+        if ei_previsto_atual > 0:
+            spi = round(
+                ei_real_atual / ei_previsto_atual,
+                2
+            )
+        else:
+            spi = 0
+            
         df_resumo["emissao_prevista"] = (
         df_resumo["ei_total"]
         *ei_previsto_pct
@@ -314,10 +392,210 @@ def carregar_dados_dashboard(projeto):
 
                 total_documentos = 0
                 aderencia = 0
+
+        df_histograma_linhas = pd.read_sql_query(
+            """
+            SELECT DISTINCT
+                recurso,
+                tipo,
+                ordem
+            FROM histograma_recursos
+            WHERE projeto = ?
+            AND nivel = 'SEMANAL'
+            ORDER BY ordem, tipo
+            """,
+            conn,
+            params=[projeto]
+        )
+        df_histograma_semanal = pd.read_sql_query(
+            """
+            SELECT *
+            FROM histograma_recursos
+            WHERE projeto = ?
+            AND nivel = 'SEMANAL'
+            """,
+            conn,
+            params=[projeto]
+        )
+
+        df_histograma_diario = pd.read_sql_query(
+            """
+            SELECT *
+            FROM histograma_recursos
+            WHERE projeto = ?
+            AND nivel = 'DIARIO'
+            """,
+            conn,
+            params=[projeto]
+        )
+
+        df_histograma_kpis = pd.read_sql_query(
+            """
+            SELECT *
+            FROM histograma_kpis
+            WHERE projeto = ?
+            """,
+            conn,
+            params=[projeto]
+        )
+
+        df_cronograma_integrado = pd.read_sql_query(
+            """
+            SELECT *
+            FROM cronograma_integrado
+            ORDER BY inicio_lb
+            """,
+            conn
+        )
+        histograma_semanal = {}
+
+        for _, row in df_histograma_semanal.iterrows():
+
+            chave = f"{row['recurso']}|{row['tipo']}"
+
+            if chave not in histograma_semanal:
+                histograma_semanal[chave] = {}
+
+            histograma_semanal[chave][
+                row["data"]
+            ] = row["valor"]
+
+        periodos_histograma = (
+            df_histograma_semanal["data"]
+            .drop_duplicates()
+            .tolist()
+        )
+
+        periodos_diario = (
+            df_histograma_diario["data"]
+            .drop_duplicates()
+            .tolist()
+        )      
+        previstos = {}
+
+        for _, row in df_histograma_semanal.iterrows():
+
+            if row["tipo"] != "Prev":
+                continue
+
+            chave = f"{row['recurso']}|{row['data']}"
+
+            previstos[chave] = row["valor"]
+
+        histograma_diario = {}
+
+        for _, row in df_histograma_diario.iterrows():
+
+            chave = f"{row['recurso']}|{row['tipo']}"
+
+            if chave not in histograma_diario:
+                histograma_diario[chave] = {}
+
+            histograma_diario[chave][
+                row["data"]
+            ] = row["valor"]
+
+        saude_recursos = 0
+        total_comparacoes = 0
+        total_desvios = 0
+
+        for _, row in df_histograma_semanal.iterrows():
+
+            if row["tipo"] != "Real":
+                continue
+
+            chave_prev = (
+                (df_histograma_semanal["recurso"] == row["recurso"])
+                &
+                (df_histograma_semanal["tipo"] == "Prev")
+                &
+                (df_histograma_semanal["data"] == row["data"])
+            )
+
+            df_prev = df_histograma_semanal[chave_prev]
+
+            if len(df_prev) == 0:
+                continue
+
+            valor_prev = float(df_prev.iloc[0]["valor"])
+            valor_real = float(row["valor"])
+
+            total_comparacoes += 1
+
+            if valor_real > valor_prev:
+                total_desvios += 1
+
+        if total_comparacoes > 0:
+
+            saude_recursos = round(
+                (
+                    (total_comparacoes - total_desvios)
+                    / total_comparacoes
+                ) * 100,
+                1
+            )
+
+        else:
+
+            saude_recursos = None
+
+
+        emitidos = int(
+            df_resumo["ei_concluida"].sum()
+        )
+
+        aprovados = int(
+            df_resumo["aprovacao_concluida"].sum()
+        )
+
+        if emitidos > 0:
+
+            taxa_aprovacao = round(
+                (aprovados / emitidos) * 100,
+                1
+            )
+
+        else:
+
+            taxa_aprovacao = 0
+
+        total_comentarios = len(
+            df_atendimento_comentario
+        )
+
+        comentarios_atendidos = len(
+            df_comentarios_atendidos
+        )
+
+        comentarios_pendentes = max(
+            total_comentarios - comentarios_atendidos,
+            0
+        )
         dados = {
              
             "ultima_atualizacao": df_curva["data_comparativo"].max(),
 
+            "periodos_histograma": periodos_histograma,
+
+            "histograma_semanal": histograma_semanal,
+
+            "previstos_histograma": previstos,
+
+            "histograma_diario": histograma_diario,
+
+            "periodos_diario": periodos_diario,
+
+            "linhas_histograma": (
+                df_histograma_linhas
+                .fillna("")
+                .to_dict(orient="records")
+            ),
+
+            "histograma_kpis": (
+                df_histograma_kpis
+                .fillna(0)
+                .to_dict(orient="records")
+            ),
             "projetos": projetos,
 
             "documentos_emitidos": (
@@ -379,10 +657,21 @@ def carregar_dados_dashboard(projeto):
                 .fillna(0)
                 .to_dict(orient="records")
             ),
+            "cronograma_integrado": (
+                df_cronograma_integrado
+                .fillna("")
+                .to_dict(orient="records")
+            ),
             "kpis": {
 
                 "total_documentos": total_documentos,
                 "aderencia": round(aderencia, 1),
+
+                "comentarios_pendentes": comentarios_pendentes,
+
+                "saude_recursos": saude_recursos,
+
+                "taxa_aprovacao": taxa_aprovacao,
 
                 "avanco_ei_real": round(
                     ei_real_pct * 100,
@@ -476,7 +765,6 @@ def index():
             "projeto",
             "F0009_000"
         )
-
         data = carregar_dados_dashboard(
             projeto
         )

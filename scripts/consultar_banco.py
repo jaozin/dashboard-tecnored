@@ -37,26 +37,7 @@ for tabela in tabelas:
 for coluna in cursor.fetchall():
     print(coluna)
 
-cursor.execute("""
-INSERT INTO acoes_usuario
-(
-    projeto,
-    documento,
-    etapa,
-    status,
-    data_acao
-)
-VALUES
-(
-    'F0009_306',
-    'TESTE_DOCUMENTO',
-    'Emissao',
-    'Emitido',
-    '08/07/2026 19:00'
-)
-""")
 
-conn.commit()
 
 print("\nCOLUNAS_ACOES_USUARIO")
 
@@ -67,10 +48,15 @@ for coluna in cursor.fetchall():
 
 print("\nACOES_USUARIO")
 
+print("\nACOES_USUARIO")
+
 cursor.execute("""
 SELECT *
 FROM acoes_usuario
 """)
+
+for linha in cursor.fetchall():
+    print(linha)
 
 print("\nCOLUNAS_HISTOGRAMA_RECURSOS")
 
@@ -78,6 +64,28 @@ for c in conn.execute(
     "PRAGMA table_info(histograma_recursos)"
 ):
     print(c)
+
+cursor.execute("""
+SELECT COUNT(*)
+FROM histograma_recursos
+""")
+
+print(
+    "histograma_recursos:",
+    cursor.fetchone()[0]
+)
+print("\nCRONOGRAMA_INTEGRADO")
+
+cursor.execute("""
+SELECT
+    projeto,
+    atividade,
+    responsavel,
+    inicio_lb,
+    termino_lb,
+    conclusao
+FROM cronograma_integrado
+""")
 
 for linha in cursor.fetchall():
     print(linha)
