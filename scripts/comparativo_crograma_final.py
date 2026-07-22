@@ -206,10 +206,13 @@ start_date = df_final["Início_LB_R0"].min()
 
 if pd.isna(start_date):
     start_date = df_final["Início"].min()
-end_date = df_final["Término_LB_R0"].max()
+datas_fim = [
+    df_final["Término_LB_R0"].max(),
+    df_final["Término"].max(),
+    df_final["Término da linha de base"].max()
+]
 
-if pd.isna(end_date):
-    end_date = df_final["Término da linha de base"].max()
+end_date = max([d for d in datas_fim if pd.notna(d)])
 
 all_dates = pd.date_range(start=start_date, end=end_date, freq='D')
 df_curva = pd.DataFrame({"Data": all_dates})

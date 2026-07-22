@@ -26,11 +26,78 @@ BANCO = os.path.join(
     "planejamento.db"
 )
 
+# ============================================================
+# CARREGAR DADOS
+# ============================================================
+
+
+# ============================================================
+# CAMINHOS
+# ============================================================
+
+BANCO = os.path.join(
+    BASE_DIR,
+    "banco",
+    "planejamento.db"
+)
+
 print(BANCO)
 
 # ============================================================
 # CARREGAR DADOS
 # ============================================================
+
+def calcular_dados_planta(conn):
+    """
+    Calcula dados dinâmicos da planta para os 3 projetos.
+    Retorna dict com avanço e documentos para cada projeto.
+    Usa resumo_disciplinas como fonte de verdade.
+    """
+    
+    projetos_planta = ['F0009_305', 'F0009_306', 'F0009_309']
+    dados_planta = {}
+    
+    for projeto in projetos_planta:
+        
+        # 1. Buscar avanço físico (EI real acumulado em %)
+        df_curva = pd.read_sql_query(
+            """
+            SELECT ei_real
+            FROM curva_s
+            WHERE projeto = ?
+            ORDER BY data DESC
+            LIMIT 1
+            """,
+            conn,
+            params=[projeto]
+        )
+        
+        avanço = float(df_curva['ei_real'].iloc[0] * 100) if len(df_curva) > 0 else 0
+        
+        # 2. Buscar total de documentos (EI Total) e emitidos (EI Concluída)
+        # Fonte: resumo_disciplinas - mesmo que usa em "Resumo por Disciplina"
+        df_resumo = pd.read_sql_query(
+            """
+            SELECT 
+                SUM(ei_total) as total_docs,
+                SUM(ei_concluida) as docs_emitidos
+            FROM resumo_disciplinas
+            WHERE projeto = ?
+            """,
+            conn,
+            params=[projeto]
+        )
+        
+        total_docs = int(df_resumo['total_docs'].iloc[0]) if len(df_resumo) > 0 and df_resumo['total_docs'].iloc[0] else 0
+        docs_emitidos = int(df_resumo['docs_emitidos'].iloc[0]) if len(df_resumo) > 0 and df_resumo['docs_emitidos'].iloc[0] else 0
+        
+        # 3. Montar resposta
+        dados_planta[projeto] = {
+            "avanco": round(avanço, 1),
+            "documentos": f"{docs_emitidos} / {total_docs}"
+        }
+    
+    return dados_planta
 
 def carregar_dados_dashboard(projeto):
 
@@ -59,10 +126,44 @@ def carregar_dados_dashboard(projeto):
                 """,
                 conn
             )
+            df_planta = pd.read_sql_query(
+                """
+                SELECT
+                    projeto,
+                    numero_documentos
+                FROM kpis
+                WHERE projeto IN (
+                    'F0009_305',
+                    'F0009_306',
+                    'F0009_309'
+                )
+                """,
+                conn
+            )
+
+            df_curva_planta = pd.read_sql_query(
+                """
+                SELECT
+                    projeto,
+                    ei_real,
+                    ei_real_acumulado
+                FROM curva_s
+                WHERE projeto IN (
+                    'F0009_305',
+                    'F0009_306',
+                    'F0009_309'
+                )
+                """,
+                conn
+            )
+
+            dados_planta = calcular_dados_planta(conn)
 
             return {
 
                         "projetos": projetos,
+                        
+                        "dados_planta": dados_planta,
 
                         "cronograma_integrado": (
                             df_cronograma_integrado
@@ -358,14 +459,6 @@ def carregar_dados_dashboard(projeto):
         ei_real_atual = float(
             linha_curva["ei_real_acumulado"]
         )
-
-        if ei_previsto_atual > 0:
-            spi = round(
-                ei_real_atual / ei_previsto_atual,
-                2
-            )
-        else:
-            spi = 0
             
         df_resumo["emissao_prevista"] = (
         df_resumo["ei_total"]

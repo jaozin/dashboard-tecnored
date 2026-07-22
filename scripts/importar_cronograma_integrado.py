@@ -3,7 +3,7 @@ import sqlite3
 import os
 from datetime import datetime
 
-ARQUIVO = r"C:\Users\jsantos250\OneDrive - Bureau Veritas\POP - Planejamento - Documentos\Automacoes\Cronograma Integrado\Int_15-07-2026.xlsx"
+ARQUIVO = r"C:\Users\jsantos250\OneDrive - Bureau Veritas\POP - Planejamento - Documentos\Automacoes\Cronograma Integrado\Int_22-07-2026.xlsx"
 
 BASE_DIR = os.path.dirname(
     os.path.dirname(os.path.abspath(__file__))

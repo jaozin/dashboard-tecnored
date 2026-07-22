@@ -29,7 +29,11 @@
                 idContainer
             );
             document.querySelectorAll('.n1-container').forEach(el => el.classList.add('hidden'));
-            document.getElementById(idContainer).classList.remove('hidden');
+            const el = document.getElementById(idContainer);
+
+            if (el) {
+                el.classList.remove('hidden');
+            }
             
             document.querySelectorAll('.btn-n1').forEach(b => b.classList.remove('bg-white/20', 'font-bold'));
             btn.classList.add('bg-white/20', 'font-bold');
@@ -66,7 +70,7 @@
 
     <aside class="w-80 sidebar-color text-white flex flex-col justify-between shadow-2xl z-50">
         <div class="flex flex-col h-full overflow-y-auto custom-scrollbar">
-            <div class="p-6 bg-white/10 flex justify-center border-b border-white/5 sticky top-0 bg-[#014E4E] z-10">
+            <div class="p-6 flex justify-center border-b border-white/5 sticky top-0 bg-[#014E4E] z-50">
                 <img src="/static/images/Logo Tecnored.png" alt="Tecnored" class="w-full h-auto max-h-16 object-contain">
             </div>
             
@@ -168,56 +172,128 @@
 
         <main class="p-10 flex-grow overflow-y-auto">
 
-            <div id="n1-dash-tecnored" class="n1-container block space-y-6">
+                        <div id="n1-dash-tecnored" class="n1-container block space-y-6">
                 <div class="flex space-x-2 border-b border-gray-200 pb-3">
                     <button onclick="switchNivel2('n2-dash-integrada', 'n2-dash-tabs', this)" class="btn-n2 px-4 py-1.5 rounded-lg font-bold bg-[#014E4E] text-white text-xs transition">Análise integrada</button>
+                    {% if projeto_selecionado == "INTEGRADO" %}
                     <button onclick="switchNivel2('n2-dash-projeto', 'n2-dash-tabs', this)" class="btn-n2 px-4 py-1.5 rounded-lg font-semibold bg-white border text-gray-700 text-xs transition">Projeto</button>
+                    {% endif %}
                 </div>
                 
                 <div id="n2-dash-integrada" class="n2-dash-tabs block bg-white p-8 rounded-2xl border shadow-sm">
-                <h3 class="font-bold text-lg text-gray-800 mb-6">Funil Executivo do Projeto</h3><div class="flex flex-col items-center space-y-3"><div class="w-80 bg-slate-200 p-4 rounded-lg text-center">
-                <div class="text-sm text-gray-600">Documentos Planejados</div><div class="text-3xl font-bold text-slate-700">{{ data.kpis.total_documentos }}</div></div><div class="text-2xl text-gray-400">↓</div>
-                <div class="w-72 bg-teal-100 p-4 rounded-lg text-center"><div class="text-sm text-gray-600">Emitidos</div><div class="text-3xl font-bold text-teal-700">{{ data.funil.emitidos }}</div></div>
-                <div class="text-2xl text-gray-400">↓</div><div class="w-64 bg-blue-100 p-4 rounded-lg text-center"><div class="text-sm text-gray-600">Em Avaliação</div><div class="text-3xl font-bold text-blue-700">{{ data.funil.avaliacao }}
-                </div></div><div class="text-2xl text-gray-400">↓</div><div class="w-56 bg-orange-100 p-4 rounded-lg text-center"><div class="text-sm text-gray-600">Comentários Atendidos</div>
-                <div class="text-3xl font-bold text-orange-700">{{ data.funil.comentarios }}</div></div><div class="text-2xl text-gray-400">↓</div><div class="w-48 bg-green-100 p-4 rounded-lg text-center">
-                <div class="text-sm text-gray-600">Aprovados</div><div class="text-3xl font-bold text-green-700">{{ data.funil.aprovados }}</div></div></div>
+                    <h3 class="font-bold text-lg text-gray-800 mb-6">Funil Executivo do Projeto</h3>
+                    <div class="flex flex-col items-center space-y-3">
+                        <div class="w-80 bg-slate-200 p-4 rounded-lg text-center">
+                            <div class="text-sm text-gray-600">Documentos Planejados</div>
+                            <div class="text-3xl font-bold text-slate-700">{{ data.kpis.total_documentos }}</div>
+                        </div>
+                        <div class="text-2xl text-gray-400">↓</div>
+                        <div class="w-72 bg-teal-100 p-4 rounded-lg text-center">
+                            <div class="text-sm text-gray-600">Emitidos</div>
+                            <div class="text-3xl font-bold text-teal-700">{{ data.funil.emitidos }}</div>
+                        </div>
+                        <div class="text-2xl text-gray-400">↓</div>
+                        <div class="w-64 bg-blue-100 p-4 rounded-lg text-center">
+                            <div class="text-sm text-gray-600">Em Avaliação</div>
+                            <div class="text-3xl font-bold text-blue-700">{{ data.funil.avaliacao }}</div>
+                        </div>
+                        <div class="text-2xl text-gray-400">↓</div>
+                        <div class="w-56 bg-orange-100 p-4 rounded-lg text-center">
+                            <div class="text-sm text-gray-600">Comentários Atendidos</div>
+                            <div class="text-3xl font-bold text-orange-700">{{ data.funil.comentarios }}</div>
+                        </div>
+                        <div class="text-2xl text-gray-400">↓</div>
+                        <div class="w-48 bg-green-100 p-4 rounded-lg text-center">
+                            <div class="text-sm text-gray-600">Aprovados</div>
+                            <div class="text-3xl font-bold text-green-700">{{ data.funil.aprovados }}</div>
+                        </div>
+                    </div>
                 </div>
 
-                <div id="n2-dash-projeto" class="n2-dash-tabs hidden bg-white p-8 rounded-2xl border shadow-sm">
-                    <h3 class="font-bold text-lg text-gray-800 mb-2">Painel de Controle do Projeto</h3>
-                    <p class="text-sm text-gray-500">Métricas analíticas do escopo BQM-LS.</p>
+                {% if projeto_selecionado == "INTEGRADO" %}
+                <div id="n2-dash-projeto" class="n2-dash-tabs hidden space-y-6">
+                    <div class="grid grid-cols-3 gap-6">
+                        <!-- PLANTA -->
+                        <div class="col-span-2 bg-white p-6 rounded-2xl border shadow-sm">
+                            <div class="flex justify-between items-center mb-4">
+                                <h3 class="font-bold text-lg text-gray-800 uppercase">LAYOUT DA PLANTA POR ÁREA</h3>
+                                <span class="text-xs italic text-gray-400">Toque nas áreas para navegar</span>
+                            </div>
+                            <div class="relative flex items-center justify-center h-[650px] border rounded-xl bg-white">
+                                <img src="{{ url_for('static', filename='images/Layout Planta.png') }}" class="max-h-full max-w-full object-contain" alt="Layout da Planta">
+                                <!-- F0009_306 -->
+                                <button id="area-306" onclick="selecionarArea('F0009_306', '94%', '217 / 280', 'Em andamento', 'Soprador')" style="position:absolute; left:47%; top:57%; width:3.5%; height:5%; border:none; background:transparent;"></button>
+                                <!-- F0009_305 -->
+                                <button id="area-305" onclick="selecionarArea('F0009_305', '59%', '280', 'Em andamento', 'Hot Stoves')" style="position:absolute; left:47%; top:62%; width:3.5%; height:5%; border:none; background:transparent;"></button>
+                                <!-- F0009_309 -->
+                                <button id="area-309" onclick="selecionarArea('F0009_309', '0%', '18', 'Não iniciado', 'Reengenharia do Forno Tecnored')" style="position:absolute; left:47.5%; top:75%; width:6%; height:7%; border:none; background:transparent;"></button>
+                            </div> 
+                        </div>
+
+                        <div class="bg-white p-6 rounded-2xl border shadow-sm">
+                            <h3 class="font-bold text-lg text-gray-800 mb-4 uppercase tracking-wide">SELECIONE UMA ÁREA</h3>
+                            <hr class="mb-6">
+                            <div class="space-y-3 mb-6">
+                                <button id="btn-305" class="w-full text-left border rounded-lg p-3 hover:bg-gray-50 transition" onclick="selecionarArea('F0009_305', '59%', '280', 'Em andamento', 'Hot Stoves')">F0009_305</button>
+                                <button id="btn-306" class="w-full text-left border rounded-lg p-3 hover:bg-gray-50 transition" onclick="selecionarArea('F0009_306', '94%', '217', 'Em andamento', 'Soprador')">F0009_306</button>
+                                <button id="btn-309" class="w-full text-left border rounded-lg p-3 hover:bg-gray-50 transition" onclick="selecionarArea('F0009_309', '0%', '18', 'Não iniciado', 'Reengenharia do Forno Tecnored')">F0009_309</button>
+                            </div>
+
+                            <div class="border-t pt-6">
+                                <h3 id="area-projeto" class="text-xl font-bold text-[#014E4E] mb-4">Nenhuma área selecionada</h3>
+                                <div class="grid grid-cols-2 gap-4 mb-4">
+                                    <div class="border rounded-xl p-4">
+                                        <div class="text-xs text-gray-500 uppercase">AVANÇO FÍSICO</div>
+                                        <div id="area-avanco" class="text-4xl font-bold text-[#014E4E] mt-2">--</div>
+                                    </div>
+                                    <div class="border rounded-xl p-4">
+                                        <div class="text-xs text-gray-500 uppercase">DOCUMENTOS</div>
+                                        <div id="area-documentos" class="text-3xl font-bold text-[#014E4E] mt-2">--</div>
+                                        <div id="area-documentos-label" class="text-xs text-gray-500">Emitidos / Total</div>
+                                    </div>
+                                </div>
+                                <div class="border rounded-xl p-4 mb-4">
+                                    <div class="text-xs text-gray-500 uppercase mb-2">STATUS DO PROCESSO</div>
+                        <div id="area-status" class="font-semibold text-[#014E4E]">--</div>
+                    </div>
+                                <div class="border rounded-xl p-4">
+                                    <div class="text-xs text-gray-500 uppercase mb-2">DESCRIÇÃO</div>
+                                    <div id="area-descricao" class="text-sm text-gray-600">Clique em uma área da planta.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                {% endif %}
             </div>
-
             <div id="n1-big-numbers" class="n1-container hidden bg-white p-8 rounded-2xl border shadow-sm space-y-8">
-                <h3 class="font-bold text-lg text-gray-800 border-b pb-2">Métricas de Big Numbers (Resumo Executivo)</h3>
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-                    <div class="bg-gray-50 p-6 rounded-xl border">
-                        <div class="text-xs text-gray-400 font-bold uppercase tracking-wider">Número de Documentos</div>
-                        <div class="text-3xl font-bold text-[#014E4E] mt-1">{{ data.kpis.total_documentos if data else '0' }}</div>
-                    </div>
-                    <div class="bg-gray-50 p-6 rounded-xl border">
-                        <div class="text-xs text-gray-400 font-bold uppercase tracking-wider">% Aderência do Modelo</div>
-                        <div class="text-3xl font-bold text-teal-600 mt-1">{{ data.kpis.aderencia if data else '0.0' }}%</div>
-                    </div>
-                    <div class="bg-gray-50 p-6 rounded-xl border">
-                        <div class="text-xs text-gray-400 font-bold uppercase tracking-wider">Avanço Físico (EI)</div>
-                        <div class="text-3xl font-bold text-blue-600 mt-1">{{ data.kpis.avanco_ei_real if data else '0.0' }}%</div>
-                    </div>
-                    <div class="bg-gray-50 p-6 rounded-xl border">
-                        <div class="text-xs text-gray-400 font-bold uppercase tracking-wider">Avanço Financeiro</div>
-                        <div class="text-3xl font-bold text-orange-600 mt-1">{{ data.kpis.avanco_financeiro if data else '0.0' }}%</div>
-                    </div>
-                </div>
+                            <h3 class="font-bold text-lg text-gray-800 border-b pb-2">Métricas de Big Numbers (Resumo Executivo)</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                                <div class="bg-gray-50 p-6 rounded-xl border">
+                                    <div class="text-xs text-gray-400 font-bold uppercase tracking-wider">Número de Documentos</div>
+                                    <div class="text-3xl font-bold text-[#014E4E] mt-1">{{ data.kpis.total_documentos if data else '0' }}</div>
+                                </div>
+                                <div class="bg-gray-50 p-6 rounded-xl border">
+                                    <div class="text-xs text-gray-400 font-bold uppercase tracking-wider">% Aderência do Modelo</div>
+                                    <div class="text-3xl font-bold text-teal-600 mt-1">{{ data.kpis.aderencia if data else '0.0' }}%</div>
+                                </div>
+                                <div class="bg-gray-50 p-6 rounded-xl border">
+                                    <div class="text-xs text-gray-400 font-bold uppercase tracking-wider">Avanço Físico (EI)</div>
+                                    <div class="text-3xl font-bold text-blue-600 mt-1">{{ data.kpis.avanco_ei_real if data else '0.0' }}%</div>
+                                </div>
+                                <div class="bg-gray-50 p-6 rounded-xl border">
+                                    <div class="text-xs text-gray-400 font-bold uppercase tracking-wider">Avanço Financeiro</div>
+                                    <div class="text-3xl font-bold text-orange-600 mt-1">{{ data.kpis.avanco_financeiro if data else '0.0' }}%</div>
+                                </div>
+                            </div>
 
-                <div class="bg-white p-6 rounded-xl border shadow-inner">
-                    <h4 class="text-lg font-bold text-center text-gray-700 mb-4">Avanço por Disciplina — Emissões Iniciais (EI) x Aprovações (AP)</h4>
-                    <div class="relative h-96">
-                        <canvas id="chartEmpilhadoResumo"></canvas>
-                    </div>
-                </div>
-            </div>
+                            <div class="bg-white p-6 rounded-xl border shadow-inner">
+                                <h4 class="text-lg font-bold text-center text-gray-700 mb-4">Avanço por Disciplina — Emissões Iniciais (EI) x Aprovações (AP)</h4>
+                                <div class="relative h-96">
+                                    <canvas id="chartEmpilhadoResumo"></canvas>
+                                </div>
+                            </div>
+                        </div>
 
             <div id="n1-realizacoes" class="n1-container hidden space-y-6">
                 <div class="flex space-x-2 border-b border-gray-200 pb-3">
@@ -297,8 +373,86 @@
                     </tr>{% endfor %}</tbody></table></div>
                 </div>
                 </div>
-                {% if projeto_selecionado == "INTEGRADO" %}<div id="n2-crono-integrado"class="n2-crono-tabs hidden bg-white p-6 rounded-xl border overflow-x-auto"><h4 class="font-bold text-gray-800 mb-4">
-                Cronograma Integrado</h4><div id="gantt-integrado"></div></div>{% endif %}
+                {% if projeto_selecionado == "INTEGRADO" %}<div id="n2-crono-integrado"class="n2-crono-tabs hidden bg-white p-6 rounded-xl border overflow-x-auto">
+                    <div
+                        style="
+                            display:flex;
+                            justify-content:space-between;
+                            align-items:center;
+                            margin-bottom:16px;
+                        "
+                    >
+                        <h4 class="font-bold text-gray-800">
+                            Cronograma Integrado
+                        </h4>
+
+                        <div
+                            style="
+                                display:flex;
+                                gap:20px;
+                                align-items:center;
+                                font-size:11px;
+                                color:#374151;
+                            "
+                        >
+
+                            <div style="display:flex;align-items:center;gap:6px;">
+                                <div style="
+                                    width:14px;
+                                    height:14px;
+                                    background:#014E4E;
+                                    border-radius:2px;
+                                "></div>
+                                <span>Executado</span>
+                            </div>
+
+                            <div style="display:flex;align-items:center;gap:6px;">
+                                <div style="
+                                    width:14px;
+                                    height:14px;
+                                    background:#A8D5CF;
+                                    border-radius:2px;
+                                "></div>
+                                <span>Planejado</span>
+                            </div>
+
+                            <div style="display:flex;align-items:center;gap:6px;">
+                                <div style="
+                                    width:14px;
+                                    height:14px;
+                                    background:
+                                    repeating-linear-gradient(
+                                        45deg,
+                                        #A8D5CF,
+                                        #A8D5CF 4px,
+                                        #D7ECE8 4px,
+                                        #D7ECE8 8px
+                                    );
+                                    border-radius:2px;
+                                "></div>
+                                <span>Atraso de Início</span>
+                            </div>
+
+                            <div style="display:flex;align-items:center;gap:6px;">
+                                <div style="
+                                    width:14px;
+                                    height:14px;
+                                    background:
+                                    repeating-linear-gradient(
+                                        45deg,
+                                        #7CC5BC,
+                                        #7CC5BC 4px,
+                                        #B9E2DC 4px,
+                                        #B9E2DC 8px
+                                    );
+                                    border-radius:2px;
+                                "></div>
+                                <span>Atraso de Término</span>
+                            </div>
+
+                        </div>
+                    </div>
+                <div id="gantt-integrado"></div></div>{% endif %}
                                            
             </div>
             <div id="n1-rac" class="n1-container hidden space-y-6">
@@ -801,219 +955,363 @@
                 console.log(dadosKpiHistograma);             
                 const cronogramaIntegrado =    
                 {{ data.cronograma_integrado|tojson }}; 
-                
-                console.log(cronogramaIntegrado);
 
-                const semanas = [];
 
-                    let data = new Date(2026, 0, 1);
+                            // ===== CALCULAR SEMANAS =====
+                            const semanas = [];
+                            const dataInicio = new Date(2026, 0, 1);
+                            const dataFim = new Date(2026, 11, 31); // 31 de dezembro de 2026
 
-                    while (data.getFullYear() === 2026) {
+                            let data = new Date(dataInicio);
 
-                        semanas.push(
-                            `${data.getDate()}/${data.getMonth() + 1}`
-                        );
+                            while (data <= dataFim) {
+                                semanas.push(
+                                    `${data.getDate()}/${data.getMonth() + 1}`
+                                );
+                                data.setDate(data.getDate() + 7);
+                            }
 
-                        data.setDate(
-                            data.getDate() + 7
-                        );
-                    }
+                            const larguraTotal = semanas.length * 56; // Largura total do Gantt
+                            // ===== GERAR HTML =====
+                            const container = document.getElementById("gantt-integrado");
 
-                    console.log(semanas);
+                            if (container) {
 
-                const container =
-                    document.getElementById(
-                        "gantt-integrado"
-                    );
+                                let htmlEsquerda = '';
 
-                if (container) {
+                                htmlEsquerda = `
+                                    <div
+                                        style="
+                                            width:735px;
+                                            flex-shrink:0;
+                                            border-right:1px solid #d1d5db;
+                                            background:white;
+                                        "
+                                    >
+                                        <div
+                                            class="grid"
+                                            style="
+                                                grid-template-columns:
+                                                80px
+                                                280px
+                                                90px
+                                                59px
+                                                59px
+                                                59px
+                                                59px
+                                                47px;
+                                            "
+                                        >
+                                            <div class="font-semibold text-[10px] p-1 border-b">PROJETO</div>
+                                            <div class="font-semibold text-[10px] p-1 border-b">ATIVIDADE</div>
+                                            <div class="font-semibold text-[10px] p-1 border-b">RESP.</div>
+                                            <div class="font-semibold text-[10px] border-b"style="display:flex;align-items:center;justify-content:center;">I. LB</div>
+                                            <div class="font-semibold text-[10px] border-b"style="display:flex;align-items:center;justify-content:center;">T. LB</div>
+                                            <div class="font-semibold text-[10px] border-b"style="display:flex;align-items:center;justify-content:center;">I. REAL</div>
+                                            <div class="font-semibold text-[10px] border-b"style="display:flex;align-items:center;justify-content:center;">T.REAL</div>
+                                            <div class="font-semibold text-[10px] border-b"style="display:flex;align-items:center;justify-content:center;">CONCL.%</div>
+                                        </div>
+                                `;
 
-                    let html = `
+                                cronogramaIntegrado.forEach(item => {
 
-                        <div
-                            class="grid"
-                            style="
-                                grid-template-columns:
-                                100px
-                                280px
-                                90px
-                                55px
-                                55px
-                                55px
-                                55px
-                                45px
-                                repeat(${semanas.length}, 45px);"
-                        >
+                                    htmlEsquerda += `
+                                        <div
+                                            class="grid"
+                                            style="
+                                                height:28px;
+                                                align-items:center;
+                                                grid-template-columns:
+                                                80px
+                                                280px
+                                                90px
+                                                59px
+                                                59px
+                                                59px
+                                                59px
+                                                47px;
+                                            "
+                                        >
+                                            <div class="text-[11px] p-1">
+                                                ${item.projeto}
+                                            </div>
 
-                            <div class="font-semibold text-[10px] p-1 border-b">PROJETO</div>
-                            <div class="font-semibold text-[10px] p-1 border-b">ATIVIDADE</div>
-                            <div class="font-semibold text-[10px] p-1 border-b">RESP.</div>
-                            <div class="font-semibold text-[10px] p-1 border-b">I. LB</div>
-                            <div class="font-semibold text-[10px] p-1 border-b">T. LB</div>
-                            <div class="font-semibold text-[10px] p-1 border-b">I. REAL</div>
-                            <div class="font-semibold text-[10px] p-1 border-b">T.REAL</div>
-                            <div class="font-semibold text-[10px] p-1 border-b">% CONCL.</div>`;
+                                            <div
+                                                class="text-[11px] p-1"
+                                                title="${item.atividade}"
+                                                style="
+                                                    overflow:hidden;
+                                                    white-space:nowrap;
+                                                    text-overflow:ellipsis;
+                                                "
+                                            >
+                                                ${item.atividade}
+                                            </div>
 
-                    semanas.forEach(s => {
+                                            <div
+                                                class="text-[11px] p-1"
+                                                title="${item.responsavel}"
+                                                style="
+                                                    overflow:hidden;
+                                                    white-space:nowrap;
+                                                    text-overflow:ellipsis;
+                                                "
+                                            >
+                                                ${item.responsavel}
+                                            </div>
 
-                        html += `
-                            <div
-                                class="text-[10px] text-center border-b p-1 font-semibold"
-                            >
-                                ${s}
-                            </div>
-                        `;
+                                            <div class="text-[11px]"style="display:flex;align-items:center;justify-content:center;height:28px;">
+                                                ${item.inicio_lb
+                                                    ? item.inicio_lb.substring(8,10) + "/" +
+                                                    item.inicio_lb.substring(5,7) + "/" +
+                                                    item.inicio_lb.substring(2,4)
+                                                    : ""
+                                                }
+                                            </div>
 
-                    });
+                                            <div class="text-[11px]"style="display:flex;align-items:center;justify-content:center;height:28px;">
+                                                ${item.termino_lb
+                                                    ? item.termino_lb.substring(8,10) + "/" +
+                                                    item.termino_lb.substring(5,7) + "/" +
+                                                    item.termino_lb.substring(2,4)
+                                                    : ""
+                                                }
+                                            </div>
 
-                    html += `
-                    </div>
-                    `;
+                                            <div class="text-[11px]"style="display:flex;align-items:center;justify-content:center;height:28px;">
+                                                ${item.inicio_real
+                                                    ? item.inicio_real.substring(8,10) + "/" +
+                                                    item.inicio_real.substring(5,7) + "/" +
+                                                    item.inicio_real.substring(2,4)
+                                                    : ""
+                                                }
+                                            </div>
 
-                    cronogramaIntegrado.forEach(item => {
+                                            <div class="text-[11px]"style="display:flex;align-items:center;justify-content:center;height:28px;">
+                                                ${item.termino_real
+                                                    ? item.termino_real.substring(8,10) + "/" +
+                                                    item.termino_real.substring(5,7) + "/" +
+                                                    item.termino_real.substring(2,4)
+                                                    : ""
+                                                }
+                                            </div>
 
-                        html += `
-                            <div
-                                class="grid"
-                                style="
-                                    grid-template-columns:
-                                    100px
-                                    280px
-                                    90px
-                                    55px
-                                    55px
-                                    55px
-                                    55px
-                                    45px
-                                    ${semanas.length * 45}px;
-                                "
-                            >
+                                            <div class="text-[11px] p-1"style="text-align:center;">
+                                                ${(Number(item.conclusao || 0) * 100).toFixed(0)}%
+                                            </div>
+                                        </div>
+                                    `;
+                                });
 
-                                <div style="width:120px" class="text-[11px] p-1" border-b">
-                                    ${item.projeto}
-                                </div>
+                                htmlEsquerda += `
+                                        </div>
+                                    `;
 
-                                <div style="width:280px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;"class="text-[11px] p-1"title="${item.atividade}">
-                                     ${item.atividade}
-                                </div>
+                                // ===== GERAR GANTT =====
+                                let htmlGantt = '';
 
-                                <div style="width:90px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;"class="text-[11px] p-1"title="${item.responsavel}">
-                                     ${item.responsavel}
-                                </div>
-                               <div style="width:80px" class="text-[11px] p-1" border-b">
-                                    ${
-                                        item.inicio_lb
-                                            ? item.inicio_lb.substring(8,10) + "/" +
-                                            item.inicio_lb.substring(5,7) + "/" +
-                                            item.inicio_lb.substring(2,4)
-                                            : ""
+                                htmlGantt = `
+                                        <div
+                                            style="
+                                                flex:1;
+                                                overflow-x:auto;
+                                                min-width:0;
+                                            "
+                                        >
+                                            <div
+                                                id="cabecalho-gantt"
+                                                style="
+                                                    width:${larguraTotal}px;
+                                                    white-space:nowrap;
+                                                    margin-top:8px;
+                                                    border-bottom:1px solid #d1d5db;
+                                                    font-size:0;
+                                                "
+                                            >
+                                            ${semanas.map(s => `
+                                                <span
+                                                    style="
+                                                        display:inline-block;
+                                                        width:56px;
+                                                        text-align:center;
+                                                        font-size:10px;
+                                                        font-weight:600;
+                                                    "
+                                                >
+                                                    ${s}
+                                                </span>
+                                            `).join("")}
+                                        </div>
+                                `;
+
+                                cronogramaIntegrado.forEach(item => {
+
+                                    const [anoI, mesI, diaI] = item.inicio_lb.split("-").map(Number);
+                                    const [anoT, mesT, diaT] = item.termino_lb.split("-").map(Number);
+
+                                    const inicio = new Date(anoI, mesI - 1, diaI);
+                                    const termino = new Date(anoT, mesT - 1, diaT);
+                                    const inicioReal = item.inicio_real
+                                    ? new Date(item.inicio_real)
+                                    : null;
+
+                                    const terminoReal = item.termino_real
+                                    ? new Date(item.termino_real)
+                                    : null;
+
+                                    const inicioAno = new Date(2026, 0, 1);
+                                    const dataLimite = new Date(2026, 11, 31);
+
+                                    const terminoExibicao =
+                                        termino > dataLimite
+                                            ? dataLimite
+                                            : termino;
+
+                                    const diasInicio = Math.floor(
+                                        (inicio - inicioAno) / (1000 * 60 * 60 * 24)
+                                    );
+
+                                    const diasDuracao = Math.max(
+                                        1,
+                                        Math.floor(
+                                            (terminoExibicao - inicio) / (1000 * 60 * 60 * 24)
+                                        ) + 1
+                                    );
+
+                                    const left = (diasInicio * 8) + 19;
+                                    const width = diasDuracao * 8;
+                                    let leftAtrasoInicio = 0;
+                                    let widthAtrasoInicio = 0;
+
+                                    if (inicioReal && inicioReal > inicio) {
+
+                                        const diasAtrasoInicio = Math.floor(
+                                            (inicioReal - inicio) /
+                                            (1000 * 60 * 60 * 24)
+                                        );
+
+                                        leftAtrasoInicio = left;
+
+                                        widthAtrasoInicio =
+                                            diasAtrasoInicio * 8;
                                     }
-                                </div>
+                                    const widthCorpo =
+                                    width - widthAtrasoInicio;
 
-                                <div style="width:80px" class="text-[11px] p-1" border-b">
-                                    ${
-                                        item.termino_lb
-                                            ? item.termino_lb.substring(8,10) + "/" +
-                                            item.termino_lb.substring(5,7) + "/" +
-                                            item.termino_lb.substring(2,4)
-                                            : ""
+                                    let leftAtrasoFim = 0;
+                                    let widthAtrasoFim = 0;
+
+                                    if (terminoReal && terminoReal > termino) {
+
+                                        const diasAtrasoFim = Math.floor(
+                                            (terminoReal - termino) /
+                                            (1000 * 60 * 60 * 24)
+                                        );
+
+                                        leftAtrasoFim =
+                                            left + width;
+
+                                        widthAtrasoFim =
+                                            diasAtrasoFim * 8;
+                                        const widthPlanejado =
+                                            width - widthAtrasoFim;
                                     }
-                                </div>
+                                    const percentual = Number(item.conclusao || 0);
+                                    const larguraExecutada =
+                                    width * percentual;
 
-                                <div style="width:80px" class="text-[11px] p-1" border-b">
-                                    ${
-                                        item.inicio_real
-                                            ? item.inicio_real.substring(8,10) + "/" +
-                                            item.inicio_real.substring(5,7) + "/" +
-                                            item.inicio_real.substring(2,4)
-                                            : ""
-                                    }
-                                </div>
-
-                                <div style="width:80px" class="text-[11px] p-1" border-b">
-                                    ${
-                                        item.termino_real
-                                            ? item.termino_real.substring(8,10) + "/" +
-                                            item.termino_real.substring(5,7) + "/" +
-                                            item.termino_real.substring(2,4)
-                                            : ""
-                                    }
-                                </div>
-
-                                <div style="width:70px" class="text-[11px] p-1" text-center border-b">
-                                    ${(Number(item.conclusao || 0) * 100).toFixed(0)}%
-                                </div>
-
-                                <div
-                                    style="
-                                        width:${semanas.length * 45}px;
-                                        position:relative;
-                                    "
-                                    class="h-8 border-l bg-gray-50"
-                                >
-
-                                    ${(() => {
-
-                                        const inicio = new Date(item.inicio_lb);
-                                        let termino = new Date(item.termino_lb);
-                                        const fimAno =
-                                            new Date(2026, 11, 31);
-
-                                        if (termino > fimAno) {
-                                            termino.setTime(fimAno.getTime());
-                                        }
-
-                                        const inicioAno = new Date(2026, 0, 1);
-
-                                        const diasInicio =
-                                            Math.max(
-                                                0,
-                                                Math.floor(
-                                                    (inicio - inicioAno) /
-                                                    (1000 * 60 * 60 * 24)
-                                                )
-                                            );
-
-                                        const diasDuracao =
-                                            Math.max(
-                                                1,
-                                                Math.floor(
-                                                    (termino - inicio) /
-                                                    (1000 * 60 * 60 * 24)
-                                                )
-                                            );
-
-                                        const left =
-                                            diasInicio * (45 / 7);
-
-                                        const width =
-                                            diasDuracao * (45 / 7);
-
-                                        return `
+                                    htmlGantt += `
+                                        <div
+                                            style="
+                                                width:${larguraTotal}px;
+                                                height:28px;
+                                                position:relative;
+                                                border-left:1px solid #e5e7eb;
+                                                background:#f9fafb;
+                                            "
+                                        >
+                                            ${widthAtrasoInicio > 0 ? `
                                             <div
                                                 style="
                                                     position:absolute;
-                                                    left:${left}px;
+                                                    left:${leftAtrasoInicio}px;
                                                     top:4px;
-                                                    width:${width}px;
+                                                    width:${widthAtrasoInicio}px;
                                                     height:16px;
-                                                    background:#014E4E;
+                                                    background:
+                                                    repeating-linear-gradient(
+                                                        45deg,
+                                                        #A8D5CF,
+                                                        #A8D5CF 4px,
+                                                        #D7ECE8 4px,
+                                                        #D7ECE8 8px
+                                                    );
                                                     border-radius:4px;
                                                 "
                                             ></div>
-                                        `;
+                                            ` : ''}
 
-                                    })()}
+                                            <div
+                                                style="
+                                                    position:absolute;
+                                                    left:${left + widthAtrasoInicio}px;
+                                                    top:4px;
+                                                    width:${widthCorpo}px;
+                                                    height:16px;
+                                                    background:#A8D5CF;
+                                                    border-radius:4px;
+                                                "
+                                            >
 
-                                </div>
+                                                <div
+                                                    style="
+                                                        width:${larguraExecutada}px;
+                                                        height:16px;
+                                                        background:#014E4E;
+                                                        border-radius:4px;
+                                                    "
+                                                ></div>
 
-                                </div>
+                                            </div>
+
+                                            ${widthAtrasoFim > 0 ? `
+                                            <div
+                                                style="
+                                                    position:absolute;
+                                                    left:${leftAtrasoFim}px;
+                                                    top:4px;
+                                                    width:${widthAtrasoFim}px;
+                                                    height:16px;
+                                                    background:
+                                                    repeating-linear-gradient(
+                                                        45deg,
+                                                        #7CC5BC,
+                                                        #7CC5BC 4px,
+                                                        #B9E2DC 4px,
+                                                        #B9E2DC 8px
+                                                    );
+                                                    border-radius:4px;
+                                                "
+                                            ></div>
+                                            ` : ''}
+                                        </div>
+                                    `;
+
+                                });
+
+                                htmlGantt += `
+                                        </div>
+                                    `;
+
+                                container.innerHTML = `
+                                    <div class="flex">
+                                        ${htmlEsquerda}
+                                        ${htmlGantt}
+                                    </div>
                                 `;
+                            }
 
-                    });
 
-                    container.innerHTML = html;
-                }
                 window.addEventListener(
                     'DOMContentLoaded',
                     () => {
@@ -1082,18 +1380,51 @@
                 new Chart(ctxBN, {
                     type: 'bar',
                     data: {
-                        labels: dashboardData.grafico_empilhado_resumo? dashboardData.grafico_empilhado_resumo.labels.map(x => {
+                       labels: dashboardData.grafico_empilhado_resumo
+                        ? dashboardData.grafico_empilhado_resumo.labels.map(x => {
 
-                                        if (x.length > 15) {
+                            const mapa = {
 
-                                            return x.split(" ");
+                                "AUTOMAÇÃO E INSTRUMENTAÇÃO": "AUT",
+                                "INSTRUMENTATION / AUTOMATION": "AUT",
 
-                                        }
+                                "ELÉTRICA": "ELE.",
+                                "ELECTRICAL": "ELE.",
 
-                                        return x;
+                                "MECÂNICA": "MEC.",
+                                "MECHANICAL": "MEC.",
 
-                                    })
-                                    : [],
+                                "ESTRUTURA METÁLICA": "EST M.",
+                                "STEEL STRUCTURE": "EST M.",
+
+                                "TUBULAÇÃO / UTILIDADES": "TUB.",
+                                "PIPING": "TUB.",
+
+                                "PROCESSOS": "PROC.",
+                                "PROCESS": "PROC.",
+
+                                "PLANEJAMENTO": "PLAN.",
+                                "PLANNING": "PLAN.",
+
+                                "COORDENAÇÃO": "COORD.",
+                                "COORDINATION": "COORD.",
+
+                                "UTILITIES SYSTEMS": "UTIL.",
+
+                                "ARCHITECTURE": "ARQ.",
+                                "TELECOMMUNICATIONS": "TEL.",
+
+                                "PENDÊNCIAS": "PEND.",
+                                "GERAL": "GER.",
+                                "MARCOS": "MAR.",
+
+                                "CIVIL": "CIV."
+                            };
+
+                            return mapa[x] || x;
+
+                        })
+                        : [],
 
                         datasets: [
                             {
@@ -1395,6 +1726,101 @@
 
                     }
 
+
+                    
+
     </script>
+
+ <script>
+
+
+                    const dadosPlanta =
+                        {{ data.dados_planta | default({}, true) | tojson }};
+
+                function selecionarArea(
+                    projeto,
+                    avanco,
+                    documentos,
+                    status,
+                    descricao
+                ) {
+                    const dados = dadosPlanta[projeto];
+
+                    document.getElementById("btn-305")
+                        .classList.remove("bg-[#014E4E]", "text-white");
+
+                    document.getElementById("btn-306")
+                        .classList.remove("bg-[#014E4E]", "text-white");
+
+                    document.getElementById("btn-309")
+                        .classList.remove("bg-[#014E4E]", "text-white");
+
+                    document.getElementById("area-305")
+                        .style.background = "transparent";
+
+                    document.getElementById("area-306")
+                        .style.background = "transparent";
+
+                    document.getElementById("area-309")
+                        .style.background = "transparent";
+
+                    document.getElementById(
+                        "area-projeto"
+                    ).innerText = projeto;
+
+                    document.getElementById(
+                        "area-avanco"
+                    ).innerText = dados.avanco + "%";
+
+                    document.getElementById(
+                        "area-documentos"
+                    ).innerText = dados.documentos;
+
+                    document.getElementById(
+                        "area-status"
+                    ).innerText = status;
+
+                    document.getElementById(
+                        "area-descricao"
+                    ).innerText = descricao;
+
+                    if (projeto === "F0009_305") {
+                        document.getElementById("btn-305")
+                            .classList.add("bg-[#014E4E]", "text-white");
+                    }
+
+                    if (projeto === "F0009_306") {
+                        document.getElementById("btn-306")
+                            .classList.add("bg-[#014E4E]", "text-white");
+                    }
+
+                    if (projeto === "F0009_309") {
+                        document.getElementById("btn-309")
+                            .classList.add("bg-[#014E4E]", "text-white");
+                    }
+
+                    if (projeto === "F0009_305") {
+
+                        document.getElementById("area-305")
+                            .style.background = "rgba(1,78,78,0.55)";
+                    }
+
+                    if (projeto === "F0009_306") {
+
+                        document.getElementById("area-306")
+                            .style.background = "rgba(1,78,78,0.55)";
+                    }
+
+                    if (projeto === "F0009_309") {
+
+                        document.getElementById("area-309")
+                            .style.background = "rgba(1,78,78,0.55)";
+                    }
+
+                }
+
+        </script>
+
+
 </body>
 </html>
