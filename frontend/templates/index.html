@@ -227,42 +227,162 @@
                                 <button id="area-305" onclick="selecionarArea('F0009_305', '59%', '280', 'Em andamento', 'Hot Stoves')" style="position:absolute; left:47%; top:62%; width:3.5%; height:5%; border:none; background:transparent;"></button>
                                 <!-- F0009_309 -->
                                 <button id="area-309" onclick="selecionarArea('F0009_309', '0%', '18', 'Não iniciado', 'Reengenharia do Forno Tecnored')" style="position:absolute; left:47.5%; top:75%; width:6%; height:7%; border:none; background:transparent;"></button>
+                                <!-- F0009_207 -->
+                                <button id="area-207"onclick="selecionarArea('F0009_207', '0%', '0', 'Não iniciado', 'Stockhouse')"style="position:absolute;left:46.8%;top:44%;width:8.5%;height:4%;border:none;background:transparent;"></button>
                             </div> 
                         </div>
 
                         <div class="bg-white p-6 rounded-2xl border shadow-sm">
                             <h3 class="font-bold text-lg text-gray-800 mb-4 uppercase tracking-wide">SELECIONE UMA ÁREA</h3>
-                            <hr class="mb-6">
-                            <div class="space-y-3 mb-6">
-                                <button id="btn-305" class="w-full text-left border rounded-lg p-3 hover:bg-gray-50 transition" onclick="selecionarArea('F0009_305', '59%', '280', 'Em andamento', 'Hot Stoves')">F0009_305</button>
-                                <button id="btn-306" class="w-full text-left border rounded-lg p-3 hover:bg-gray-50 transition" onclick="selecionarArea('F0009_306', '94%', '217', 'Em andamento', 'Soprador')">F0009_306</button>
-                                <button id="btn-309" class="w-full text-left border rounded-lg p-3 hover:bg-gray-50 transition" onclick="selecionarArea('F0009_309', '0%', '18', 'Não iniciado', 'Reengenharia do Forno Tecnored')">F0009_309</button>
+                            <hr class="mb-2">
+                            <div class="mb-2">
+                            <select
+                                    id="seletor-area"
+                                    class="w-full border rounded-lg p-3 bg-white text-gray-800"
+                                    onchange="selecionarAreaDropdown(this.value)"
+                                >
+                                    <option value="">Selecione uma área...</option>
+
+                                    <option value="F0009_305">
+                                        F0009_305 - Hot Stoves
+                                    </option>
+
+                                    <option value="F0009_306">
+                                        F0009_306 - Soprador
+                                    </option>
+
+                                    <option value="F0009_309">
+                                        F0009_309 - Reengenharia do Forno Tecnored
+                                    </option>
+
+                                    <option value="F0009_207">
+                                        F0009_207 - Stockhouse
+                                    </option>
+
+                                </select>
+
+                            </div>
+                            <div class="border-t pt-6">
+                                <h3 id="area-projeto" class="text-xl font-bold text-[#014E4E] mb-2">Nenhuma área selecionada</h3>
+                                <div class="grid grid-cols-2 gap-4 mb-2">
+
+                                <div class="border rounded-xl p-3">
+                                    <div class="text-xs text-gray-500 uppercase">
+                                        AVANÇO FÍSICO
+                                    </div>
+
+                                    <div
+                                        id="area-avanco"
+                                        class="text-4xl font-bold text-[#014E4E] mt-2"
+                                    >
+                                        --
+                                    </div>
+                                </div>
+
+                                <div class="border rounded-xl p-3">
+                                    <div class="text-xs text-gray-500 uppercase">
+                                        STATUS
+                                    </div>
+
+                                    <div
+                                        id="area-status"
+                                        class="text-xl font-bold text-[#014E4E] mt-2"
+                                    >
+                                        --
+                                    </div>
+                                </div>
+
                             </div>
 
-                            <div class="border-t pt-6">
-                                <h3 id="area-projeto" class="text-xl font-bold text-[#014E4E] mb-4">Nenhuma área selecionada</h3>
-                                <div class="grid grid-cols-2 gap-4 mb-4">
-                                    <div class="border rounded-xl p-4">
-                                        <div class="text-xs text-gray-500 uppercase">AVANÇO FÍSICO</div>
-                                        <div id="area-avanco" class="text-4xl font-bold text-[#014E4E] mt-2">--</div>
-                                    </div>
-                                    <div class="border rounded-xl p-4">
-                                        <div class="text-xs text-gray-500 uppercase">DOCUMENTOS</div>
-                                        <div id="area-documentos" class="text-3xl font-bold text-[#014E4E] mt-2">--</div>
-                                        <div id="area-documentos-label" class="text-xs text-gray-500">Emitidos / Total</div>
-                                    </div>
+                            <div class="border rounded-xl p-3 mb-2">
+
+                                <div class="text-xs text-gray-500 uppercase mb-1">
+                                    DESCRIÇÃO
                                 </div>
-                                <div class="border rounded-xl p-4 mb-4">
-                                    <div class="text-xs text-gray-500 uppercase mb-2">STATUS DO PROCESSO</div>
-                        <div id="area-status" class="font-semibold text-[#014E4E]">--</div>
-                    </div>
-                                <div class="border rounded-xl p-4">
-                                    <div class="text-xs text-gray-500 uppercase mb-2">DESCRIÇÃO</div>
-                                    <div id="area-descricao" class="text-sm text-gray-600">Clique em uma área da planta.</div>
+
+                                <div
+                                    id="area-descricao"
+                                    class="text-sm text-gray-600"
+                                >
+                                    Clique em uma área da planta.
                                 </div>
+
+                            </div>
+
+                            <!-- FUNIL VEM AQUI -->
+                            <div id="funil-documentos" class="border rounded-xl p-4">
+
+                                    <div class="text-xs text-gray-500 uppercase mb-3">
+                                        FUNIL DOCUMENTAL
+                                    </div>
+
+                                    <div class="flex flex-col items-center gap-1">
+
+                                        <div class="w-full bg-gray-100 rounded-lg py-2 text-center">
+                                            <div class="text-[10px] text-gray-500">
+                                                Planejados
+                                            </div>
+                                            <div id="funil-planejados"
+                                                class="text-lg font-bold text-[#014E4E]">
+                                                0
+                                            </div>
+                                        </div>
+
+                                        <div class="text-gray-400 text-sm">↓</div>
+
+                                        <div class="w-[85%] bg-teal-100 rounded-lg py-2 text-center">
+                                            <div class="text-[10px] text-gray-500">
+                                                Emitidos
+                                            </div>
+                                            <div id="funil-emitidos"
+                                                class="text-base font-bold text-[#014E4E]">
+                                                0
+                                            </div>
+                                        </div>
+
+                                        <div class="text-gray-400 text-sm">↓</div>
+
+                                        <div class="w-[70%] bg-blue-100 rounded-lg py-2 text-center">
+                                            <div class="text-[10px] text-gray-500">
+                                                Em Avaliação
+                                            </div>
+                                            <div id="funil-avaliacao"
+                                                class="text-base font-bold text-[#014E4E]">
+                                                0
+                                            </div>
+                                        </div>
+
+                                        <div class="text-gray-400 text-sm">↓</div>
+
+                                        <div class="w-[55%] bg-amber-100 rounded-lg py-2 text-center">
+                                            <div class="text-[10px] text-gray-500">
+                                                Comentários
+                                            </div>
+                                            <div id="funil-comentarios"
+                                                class="text-base font-bold text-[#014E4E]">
+                                                0
+                                            </div>
+                                        </div>
+
+                                        <div class="text-gray-400 text-sm">↓</div>
+
+                                        <div class="w-[40%] bg-green-100 rounded-lg py-2 text-center">
+                                            <div class="text-[10px] text-gray-500">
+                                                Aprovados
+                                            </div>
+                                            <div id="funil-aprovados"
+                                                class="text-base font-bold text-[#014E4E]">
+                                                0
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
                             </div>
                         </div>
-                    </div>
                 </div>
                 {% endif %}
             </div>
@@ -1745,16 +1865,11 @@
                     descricao
                 ) {
                     const dados = dadosPlanta[projeto];
+                    const seletor = document.getElementById("seletor-area");
 
-                    document.getElementById("btn-305")
-                        .classList.remove("bg-[#014E4E]", "text-white");
-
-                    document.getElementById("btn-306")
-                        .classList.remove("bg-[#014E4E]", "text-white");
-
-                    document.getElementById("btn-309")
-                        .classList.remove("bg-[#014E4E]", "text-white");
-
+                    if (seletor) {
+                        seletor.value = projeto;
+                    }
                     document.getElementById("area-305")
                         .style.background = "transparent";
 
@@ -1762,6 +1877,9 @@
                         .style.background = "transparent";
 
                     document.getElementById("area-309")
+                        .style.background = "transparent";
+
+                    document.getElementById("area-207")
                         .style.background = "transparent";
 
                     document.getElementById(
@@ -1773,10 +1891,6 @@
                     ).innerText = dados.avanco + "%";
 
                     document.getElementById(
-                        "area-documentos"
-                    ).innerText = dados.documentos;
-
-                    document.getElementById(
                         "area-status"
                     ).innerText = status;
 
@@ -1784,21 +1898,26 @@
                         "area-descricao"
                     ).innerText = descricao;
 
-                    if (projeto === "F0009_305") {
-                        document.getElementById("btn-305")
-                            .classList.add("bg-[#014E4E]", "text-white");
-                    }
+                    document.getElementById(
+                        "funil-planejados"
+                    ).innerText = dados.planejados || 0;
 
-                    if (projeto === "F0009_306") {
-                        document.getElementById("btn-306")
-                            .classList.add("bg-[#014E4E]", "text-white");
-                    }
+                    document.getElementById(
+                        "funil-emitidos"
+                    ).innerText = dados.emitidos || 0;
 
-                    if (projeto === "F0009_309") {
-                        document.getElementById("btn-309")
-                            .classList.add("bg-[#014E4E]", "text-white");
-                    }
+                    document.getElementById(
+                        "funil-avaliacao"
+                    ).innerText = dados.avaliacao || 0;
 
+                    document.getElementById(
+                        "funil-comentarios"
+                    ).innerText = dados.comentarios || 0;
+
+                    document.getElementById(
+                        "funil-aprovados"
+                    ).innerText = dados.aprovados || 0;
+                    
                     if (projeto === "F0009_305") {
 
                         document.getElementById("area-305")
@@ -1817,7 +1936,60 @@
                             .style.background = "rgba(1,78,78,0.55)";
                     }
 
+                    if (projeto === "F0009_207") {
+
+                        document.getElementById("area-207")
+                            .style.background = "rgba(1,78,78,0.55)";
+                    }
+
                 }
+
+        </script>
+        <script>
+
+        function selecionarAreaDropdown(projeto) {
+
+            if (projeto === "F0009_305") {
+                selecionarArea(
+                    "F0009_305",
+                    "59%",
+                    "280",
+                    "Em andamento",
+                    "Hot Stoves"
+                );
+            }
+
+            if (projeto === "F0009_306") {
+                selecionarArea(
+                    "F0009_306",
+                    "94%",
+                    "217",
+                    "Em andamento",
+                    "Soprador"
+                );
+            }
+
+            if (projeto === "F0009_309") {
+                selecionarArea(
+                    "F0009_309",
+                    "0%",
+                    "18",
+                    "Não iniciado",
+                    "Reengenharia do Forno Tecnored"
+                );
+            }
+
+            if (projeto === "F0009_207") {
+                selecionarArea(
+                    "F0009_207",
+                    "0%",
+                    "0",
+                    "Não iniciado",
+                    "Stockhouse"
+                );
+            }
+
+        }
 
         </script>
 

@@ -78,9 +78,12 @@ def calcular_dados_planta(conn):
         # Fonte: resumo_disciplinas - mesmo que usa em "Resumo por Disciplina"
         df_resumo = pd.read_sql_query(
             """
-            SELECT 
+            SELECT
                 SUM(ei_total) as total_docs,
-                SUM(ei_concluida) as docs_emitidos
+                SUM(ei_concluida) as docs_emitidos,
+                SUM(avaliacao_cliente) as avaliacao,
+                SUM(atendimento_comentario) as comentarios,
+                SUM(aprovacao_concluida) as aprovados
             FROM resumo_disciplinas
             WHERE projeto = ?
             """,
@@ -94,7 +97,14 @@ def calcular_dados_planta(conn):
         # 3. Montar resposta
         dados_planta[projeto] = {
             "avanco": round(avanço, 1),
-            "documentos": f"{docs_emitidos} / {total_docs}"
+            "documentos": f"{docs_emitidos} / {total_docs}",
+
+            "planejados": total_docs,
+            "emitidos": docs_emitidos,
+
+            "avaliacao": int(df_resumo['avaliacao'].iloc[0] or 0),
+            "comentarios": int(df_resumo['comentarios'].iloc[0] or 0),
+            "aprovados": int(df_resumo['aprovados'].iloc[0] or 0)
         }
     
     return dados_planta
